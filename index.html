@@ -36,7 +36,7 @@
             <!-- Main Navigation -->
             <nav class="main-nav">
                 <ul>
-                    <li><a href="/">Work</a></li>
+                    <li class="active"><a href="/">Work</a></li>
                     <li><a href="/profile.html">Profile</a></li>
                     <li><a href="/blog">Blog</a></li>
                 </ul>
@@ -75,9 +75,9 @@
 			<div class="work-panel" id="a">
 				<div class="container">
 					<div class="row">
-						<div class="grid">
-							<div class="grid-sizer"></div>
+						<div class="grid shots">
 
+							<!--
 							<a href="/projects/edcetera" class="item ui normal">
 								<figure class="background" style="background-image: url(images/edcetera/hero.jpg);">
 									<div class="overlay">
@@ -87,6 +87,7 @@
 							        <div class="image-placeholder"><img src="images/edcetera/hero.jpg"></div>
 								</figure>
 							</a>
+							-->
 
 						</div>
 					</div>
@@ -141,15 +142,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/custom.modernizr.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.lightbox.js"></script>
 <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
 <script type="text/javascript" src="js/formstone.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/imagesloaded.js"></script>
-<script type="text/javascript" src="js/masonry.js"></script>
-<script type="text/javascript" src="js/gray.js"></script>
+<script type="text/javascript" src="js/jribbble.min.js"></script>
 <script type="text/javascript" src="js/plain.js"></script>
 <script type="text/javascript" src="js/theme.js"></script>
+
+<script>
+    $.jribbble.setToken('ab23fddd8b52d53735e81f22874508923be4435e8f89c31c58193091c7f0e510');
+    $.jribbble.shots('attachments').then(function(shots) {
+		var html = [];
+
+		shots.forEach(function(shot) {
+			// See the Dribbble docs for all available shot properties.
+			html.push('<a href="' + shot.html_url + '">');
+			html.push('<img src="' + shot.images.normal + '">');
+			html.push('</a>');
+		});
+
+		$('.shots').html(html.join(''));
+	});
+ </script>
 
 </body>
 </html>

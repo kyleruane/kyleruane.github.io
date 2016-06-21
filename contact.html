@@ -37,7 +37,7 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="/">Work</a></li>
-                    <li class="active"><a href="/profile">Profile</a></li>
+                    <li><a href="/profile">Profile</a></li>
                     <li><a href="/blog">Blog</a></li>
                 </ul>
             </nav>
@@ -64,65 +64,37 @@
 
 	<div class="placeholder"></div>
 	
-	<main class="single post profile">
+	<main class="single post">
 		<div class="container">
 
-			<section class="feature">
-		  		<img src="images/self_bg.jpg">
+			<section class="feature" data-barley="contact_feature" data-barley-editor="image">
+		  		<img src="images/gray.jpg">
 		  	</section>
-		  	<div class="text">
-			  	<article>
-			  		<header>
-				  		<h2>I am...</h2>
-				  	</header>
-			  		<div>
-					    <p>Currently co-running a studio called Plain along with @cdevroe. We built a couple of online products—an inline website editing system called Barley and a to-do list for bookmarks called Unmark. We are working on releasing v2 of Barley which is a complete revamp from the bottom up. We think people are really going to fall in love with it. We also design and build custom solutions for select clients and friends. Maybe you?</p>
-					    <h2>I was…</h2>
-					    <p>Co-owner of an agency called Argyll Studios, run with @timwco. We specialized in custom WordPress sites and made an online password management tool called Hosted Notes.</p>
-						<p>A freelance designer, performing contract-based work for a number of mid-sized and large agencies, on both short and long-term engagements.</p>
-						<p>Design lead at a mid-sized eCommerce agency called Solid Cactus. I worked on both client projects and internal products, designing over 100 web stores for nearly every type of business—from small mom-and-pop stores to Fortune 100 corporations.</p>
-						<p>A swiss-army-knife at a small local advertising agency where I managed projects, designed for print/web/tv, developed an occasional website, handled media buying, and copy-wrote.</p>
-						<p>Art director for a local large-format lifestyle magazine, handling editorial graphics, ad creation, layout, and print preparation/proofing.</p>
-					</div>
-				</article>
-				<aside>
-					<div class="row">
-						<div class="sidebar">
-							<div>
-								<h4>Clients</h4>
-								<p>I’ve had the privilege of working with some outstanding people and companies. A few select ones…</p>
-								<p>Temple University
-								<br>SF Moma
-								<br>MLS
-								<br>Red Bull
-								<br>Lifetime Television
-								<br>Kennedy Space Center
-								<br>Dave Mustaine
-								<br>AC Moore
-								<br>Everlast
-								<br>Frigidaire
-								<br>Burlington Coat Factory
-								<br>Wells Fargo
-								<br>Best Buy
-								<br>C-SPAN
-							</div>
-						</div>
-						<div class="sidebar">
-							<div>
-								<h4>Elsewhere</h4>
-								<p>You can find me complaining about everything, taking photos of burritos, or making 80s playlists on the following networks…</p>
-								<p>
-									<a href="https://twitter.com/kyleruane">Twitter</a><br>
-									<a href="https://www.instagram.com/kyleruane/">Instagram</a><br>
-									<a href="https://dribbble.com/kyleruane">Dribbble</a><br>
-									<a href="https://open.spotify.com/user/kruane142">Spotify</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</aside>
-			</div>
+		  	<article>
+		  		<header>
+			  		<h2 data-barley="contact_title" data-barley-editor="mini">Page Title</h2>
+			  	</header>
+		  		<div data-barley="contact_body" data-barley-editor="advanced">
+				    <p>Start typing...</p>
+				</div>
+				<div class="form" id="work-with-us-form">
+					<div id="barley-form">
+						<form class="contact">
+							<input type="hidden" name="to" id="to" value="kyle.j.ruane@gmail.com" />
+					    	<input type="hidden" name="subject" id="subject" value="Form Submission - kyleruane.com" />
+					    	<input type="hidden" name="response_success" id="response_success" value="Thanks for reaching out. I'll try to get back to you as soon as possible." />
+					    	<input type="hidden" name="response_error" id="response_error" value="Sorry, something went wrong. Would you mind trying again?" />
 
+						    <p><input type="text" id="name" placeholder="Name" data-required="true" /></p>
+							<p><input type="text" id="email" placeholder="Email" data-required="true" /></p>
+							
+					        <textarea rows="4" name="message" placeholder="Message..."></textarea>
+					        <input type="submit" value="Submit" id="barley-submit" class="button" />
+					        <div id="barley-form-message" style="display:none;"></div>
+						</form>
+				    </div>
+				</div>
+			</article>
 		</div>
 	</main>
 
@@ -138,7 +110,7 @@
 			  		</ul>
 		  		</div>
 		  		<div class="copyright" data-barley="copyright_text" data-barley-editor="simple">
-					<p>© Kyle Ruane</p>
+					<p>© info</p>
 			  	</div>
 		  	</div>
 		  </div>
