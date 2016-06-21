@@ -150,7 +150,7 @@
 
 <script>
     $.jribbble.setToken('ab23fddd8b52d53735e81f22874508923be4435e8f89c31c58193091c7f0e510');
-    $.jribbble.users('kyleruane').then(function(user) {
+    $.jribbble.users('kyleruane').shots({per_page: 36}).then(function(shots) {
 		var html = [];
 
 		shots.forEach(function(shot) {
