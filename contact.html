@@ -30,7 +30,7 @@
                 <a href="/">
                     <img src="images/logo_small.svg">
                 </a>
-                <span>Derp</span>
+                <span>Kyle Ruane</span>
             </h1>
           	
             <!-- Main Navigation -->
@@ -78,19 +78,15 @@
 				    <p>Start typing...</p>
 				</div>
 				<div class="form" id="work-with-us-form">
-					<div id="barley-form">
-						<form class="contact">
-							<input type="hidden" name="to" id="to" value="kyle.j.ruane@gmail.com" />
+					<div>
+						<form class="contact" action="https://formspree.io/kyle.j.ruane@gmail.com" method="POST">
 					    	<input type="hidden" name="subject" id="subject" value="Form Submission - kyleruane.com" />
-					    	<input type="hidden" name="response_success" id="response_success" value="Thanks for reaching out. I'll try to get back to you as soon as possible." />
-					    	<input type="hidden" name="response_error" id="response_error" value="Sorry, something went wrong. Would you mind trying again?" />
 
-						    <p><input type="text" id="name" placeholder="Name" data-required="true" /></p>
-							<p><input type="text" id="email" placeholder="Email" data-required="true" /></p>
+						    <p><input type="text" id="name" name="name" placeholder="Name" data-required="true" /></p>
+							<p><input type="text" id="email" name="_replyto" placeholder="Email" data-required="true" /></p>
 							
 					        <textarea rows="4" name="message" placeholder="Message..."></textarea>
-					        <input type="submit" value="Submit" id="barley-submit" class="button" />
-					        <div id="barley-form-message" style="display:none;"></div>
+					        <input type="submit" value="Submit" class="button" />
 						</form>
 				    </div>
 				</div>
