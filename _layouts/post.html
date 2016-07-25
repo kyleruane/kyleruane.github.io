@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="placeholder"></div>
+<nav class="blog-nav"></nav>
+    
+<main class="single post">
+    <div class="container">
+
+        <section class="feature">
+            <img src="{{ site.baseurl }}/images/{{ page.feature }}">
+        </section>
+        <article>
+            <header>
+                <div class="meta">
+                    <span class="date">{{ page.date | date: '%B %-d, %Y' }}</span>
+                </div>
+                <h2>{{ page.title }}</h2>
+            </header>
+            <div>
+                {{ content }}
+            </div>
+        </article>
+
+    </div>
+</main>
+

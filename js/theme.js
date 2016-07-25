@@ -1,30 +1,15 @@
 $(document).ready(function(){
 
-    // Run masonry plugin
-    /*
-    var $grid = $('.grid').masonry({
-        itemSelector: '.item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-    });
-    $grid.imagesLoaded().progress( function() {
-       $grid.masonry('layout');
-    });
-*/
-    
     // Featured Photo
-    $('.background').css('background-image', function(){ 
-       return 'url(' + $(this).find('img').attr("src") + ')';
+    $('.work .background').css('background-image', function(){ 
+       return 'url(' + $(this).children('.bg').find('img').attr("src") + ')';
     });
-
-    /*
-    $('.grid').masonry({
-      itemSelector: '.item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
+    $('.work .feature').css('background-image', function(){ 
+       return 'url(' + $(this).siblings('.thumb').find('img').attr("src") + ')';
     });
-*/
-    
+    $('.profile .feature .image').css('background-image', function(){ 
+       return 'url(' + $(this).parent().find('img').attr("src") + ')';
+    });    
 
     // Replace SVG images with PNG versions if SVG is not supported
     if(!Modernizr.svg) {

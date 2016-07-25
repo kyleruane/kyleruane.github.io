@@ -1,0 +1,120 @@
+.outro {
+	padding: 100px 20px 50px;
+	@include clearfix();
+	@include sm { 
+		padding: 160px 48px 100px;
+	}
+	@include md { 
+		padding: 200px 68px;
+	}
+	.text {
+		font-size: 14px;
+		@include sm {
+			width: 66.666666%;
+			float: right;
+			padding-top: 6px;
+		}
+		@include md {
+			width: 50%;
+			font-size: 16px;
+		}
+		p {
+			font-size: inherit; 
+		}
+	}
+	.headline {
+		position: relative;
+		&:before {
+			content: "";
+			display: none;
+			width: calc(100% - 24px);
+			height: 1px;
+			background: $border-color;
+			position: absolute;
+			top: 24px;
+			right: 24px;
+			@include sm {
+				display: block;
+			}
+		}
+		@include sm {
+			width: 33.333333%;
+			float: left;
+			padding: 0 20px 0 0;
+		}
+		@include md {
+			width: 50%;
+			font-size: 16px;
+		}
+		p {
+			font-size: inherit; 
+		}
+		h2 {
+			margin-top: 0;
+			display: inline-block;
+			padding: 0;
+			font-size: 22px;
+			background: white;
+			position: relative;
+			margin-bottom: 24px;
+			@include sm {
+				padding: 0 20px;
+				font-size: 30px;
+			}
+		}
+	}
+	h4 {
+		font-size: 16px;
+		font-weight: 500;
+		margin: 0 0 32px; 
+		@include sm {
+			font-size: 18px;
+		}
+	}
+	a {
+		font-size: 18px;
+		font-weight: 600;
+	}
+}
+.solutions {
+	figure {
+		border-bottom: $border-style;
+		padding: 20px;
+		@include clearfix();
+		@include sm {
+			padding: 80px 60px;
+		}
+		@include lg {
+			padding: 140px 88px;
+		}
+		&:nth-child(even) {
+			background: transparentize($gray-bg, .4);
+		}
+		section {
+			@include make-md-column(6);
+			&:first-of-type {
+				@include md {
+					padding-right: 60px;
+				}
+			}
+			h6 {
+				font-size: 14px;
+				font-weight: 400;
+				margin: 10px 0 24px;
+				font-family: $font-nav;
+				text-transform: uppercase;
+				color: transparentize($text-light, .15);
+			}
+			h4 {
+				font-size: 28px;
+				margin-bottom: 28px;
+			}
+			.need, .solution {
+				margin-bottom: 40px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

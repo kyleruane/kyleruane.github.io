@@ -1,0 +1,29 @@
+# Site settings
+title:				Kyle Ruane, Multi-disciplinary Designer
+email: 				kyle.j.ruane@gmail.com
+description: 		""
+baseurl: 			"" # the subpath of your site, e.g. /blog
+url: 				"http://kyleruane.com" # the base hostname & protocol for your site
+logo:				logo_small.svg
+twitter_username: 	kyleruane
+github_username:  	kyleruane
+
+# Build settings
+markdown: 			kramdown
+
+# Pagination
+#paginate: 16
+#paginate_path: "/blog/page:num/"
+
+collections:
+  projects:
+    output: true
+    permalink: /project/:path
+
+# Gems
+#gems: [jekyll-paginate]
+
+# Image bucket path
+img_path: https://s3.amazonaws.com/kyleruane.com/images/
+blog_img_path: https://s3.amazonaws.com/kyleruane.com/images/blog/
+project_img_path: https://s3.amazonaws.com/kyleruane.com/images/projects/

@@ -1,0 +1,19 @@
+---
+layout: project
+title: Yumza
+description: |
+ <p>Throwback eCommerce store design chock full of textures and shadows.</p>
+ <time>c. 2015</time>
+
+feature: yumza/hero.jpg
+backdrop: yumza/hero.jpg
+thumb:
+
+date: 2000-01-11
+category: UI
+size: half
+---
+
+<p class="half"><img src="{{site.project_img_path}}yumza/yz_prod.jpg"></p>
+<p class="half"><img src="{{site.project_img_path}}yumza/yz_popin.jpg"></p>
+<p class="half"><img src="{{site.project_img_path}}yumza/yz_block.jpg"></p>

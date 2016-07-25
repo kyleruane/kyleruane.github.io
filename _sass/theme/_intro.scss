@@ -1,0 +1,111 @@
+.intro {
+	padding: 140px 20px 50px;
+	min-height: 400px;
+	@include clearfix();
+	position: relative;
+	overflow: hidden;
+	@include sm {
+		padding: 84px 48px;
+		height: 100vh;
+		background-image: url(../images/trees_light.jpg);
+		@include background;
+	}
+	@include md { 
+		padding: 100px 68px;
+	}
+	@include xxl {
+		height: calc(100vh - 40px);
+	}
+	.line {
+		// diagonal
+		/*
+		@include md {
+			height: 200%;
+			width: 1px;
+			background: transparentize($text-light, .88);
+			position: absolute;
+			top: -30%;
+			left: 0%;		
+			@include rotate(-135deg);
+		}
+		*/
+		@include sm {
+			height: 500px;
+			width: 1px;
+			background: transparentize(black, .35);
+			position: absolute;
+			top: 0;
+			right: 92px;
+			opacity: .14;
+			&:before {
+				content: " ";
+				display: block;
+				width: 18px;
+				height: 1px;
+				background: black;
+				position: absolute;
+				bottom: 4px;
+				right: -3px;
+				@include rotate(45deg);
+			}
+			&:after {
+				content: " ";
+				display: block;
+				width: 18px;
+				height: 1px;
+				background: black;
+				position: absolute;
+				bottom: 4px;
+				right: -14px;
+				@include rotate(-45deg);
+			}
+		}
+		@include md {
+			right: 104px;
+		}
+	}
+	.text {
+		font-size: 14px;
+		@include sm {
+			padding-left: 20px;
+			float: left;
+			width: 66.666666%
+		}
+		@include md {
+			width: 50%;
+		}
+		@include md {
+			font-size: 16px;
+		}
+	}
+	h3 {
+		font-size: 24px;
+		font-weight: 900;
+		margin: 0 0 36px;
+		text-shadow: 0 0 10px transparentize(white, .50);
+		@include sm {
+			font-size: 32px;
+		}
+		i, em {
+			font-weight: 500;
+			font-size: 18px;
+			color: lighten($text-light, 40%);
+			@include sm {
+				font-size: 28px;
+			}
+		}
+	}
+	h5 {
+		font-weight: 600;
+		font-size: 16px;
+		margin-top: 30px;
+	}
+	p {	
+		text-shadow: 0 0 10px transparentize(white, .50);
+	}
+	&.hireme {
+		@include sm {
+			background-image: url(../images/axe.jpg);
+		}
+	}
+}

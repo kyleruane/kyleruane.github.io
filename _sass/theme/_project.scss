@@ -1,0 +1,170 @@
+.single {
+	@include sm {
+		padding-right: 52px;
+		padding-top: 24px;
+	}
+	@include md {
+		padding-right: 56px;
+		padding-top: 42px;
+	}
+	&.project {
+		@include sm {
+			padding-right: 10px;
+		}
+		@include md {
+			padding-right: 10px;
+		}
+	}
+	&.contact-form {
+		@include sm {
+			padding-right: 0;
+		}
+		@include md {
+			padding-right: 0;
+		}
+	}
+}
+.project-intro {
+	overflow: hidden;
+	margin-bottom: 30px;
+	font-size: 14px;
+	height: 100%;
+	@include sm {
+		margin-bottom: 0;
+		width: 180px;
+		position: absolute;
+		left: 60px;
+	}
+	@include md {
+		width: 220px;
+	}
+	@include lg {
+		width: 260px;
+	}
+	@include xl {
+		width: 300px;	
+	}
+	@include xxl {
+		height: calc(100% - 120px);
+	}
+	.floater {
+		@include sm {
+			position: fixed;
+			width: 180px;
+		}
+		@include md {
+			width: 220px;
+		}
+		@include lg {
+			width: 260px;
+		}
+		@include xl {
+			width: 300px;	
+		}
+	}
+	h2 {
+		text-align: left;
+		margin-top: 0;
+		max-width: 100%;
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: 20px;
+		margin-bottom: 30px;
+		@include sm {
+			font-size: 20px;
+			margin-bottom: 42px;
+		}
+		i {
+			font-size: 16px;
+			color: transparentize($text-light, .6);
+			margin-left: 6px;
+			font-weight: 400;
+			@include sm {
+				font-size: 16px;
+			}
+		}
+	}
+	p {
+		font-size: inherit; 
+	}
+	time {
+		//font-style: italic;
+		font-family: $font-title;
+		font-weight: 400;
+		color: transparentize($text-light, .2);
+	}
+	a {
+		font-weight: 400;
+		color: #111;
+		border-bottom: $border-style;
+	}
+}
+.project-content {
+	margin-bottom: 60px;
+	@include sm {
+		margin-left: 200px;
+	}
+	@include md {
+		margin-left: 244px;
+	}
+	@include lg {
+		margin-left: 300px;
+	}
+	@include xl {
+		margin-left: 360px;
+	}
+	.feature {
+		text-align: center;
+		margin-bottom: 10px;
+		img {
+			width: 100%;
+		}
+	}
+	.images {
+		@include clearfix();
+	    margin: 0 auto 20px;
+	    @include sm {
+	    	margin: 0 -10px 40px;
+	    }
+		p {
+			margin: 0;
+			@include sm {
+				margin: 0;
+			}
+		}
+		img {
+			@include sm {
+				border: 10px solid white;
+			}
+		}	
+		.half {
+			@include sm {
+				width: 50%;
+				float: left;
+			}
+		}	
+		.third {
+			@include sm {
+				width: 50%;
+				float: left;
+			}
+			@include lg {
+				width: 33.333333%;
+			}
+		}
+	}
+}
+.owner {
+	figure {	
+		background: #f6f6f6;
+		padding: 12px;
+		margin-bottom: 16px;
+	}
+	label {
+		font-size: 11px;
+		text-transform: uppercase;
+		font-family: $font-nav;
+		margin-bottom: 6px;
+		font-weight: 300;
+	}
+}
