@@ -3,6 +3,7 @@ layout: project
 title: Tanmaya
 description: |
  <p>Branding for a mindfulness coach and accompanying website that includes calendar availability and rich resources such as inspirational passages and guided meditation audio tracks.</p>
+ <p>Deliverables included custom website design and front-end implementation.</p>
  <time>c. 2014</time>
 
 feature: tanmaya/tg_hero.jpg

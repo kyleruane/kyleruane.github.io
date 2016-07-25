@@ -2,8 +2,13 @@
 layout: project
 title: ClassCraft
 description: |
- <p>Branding and website for a firm offering enterprise-level audio/visual solutions.</p>
+ <p>Branding and website for a firm offering enterprise-level audio/visual solutions, such as control room planning and execution, custom conference rooms, and home theaters.</p>
+ <p>Deliverables included logo system, branding guidelines, business cards, document templates, and a custom website.</p>
  <time>c. 2015</time>
+ <ul>
+ 	<li><a href="http://classcraftav.com/">View live site</a></li>
+ 	<li><a href="https://dribbble.com/kyleruane/projects/314638-ClassCraft">View project on Dribbble</a></li>
+ </ul>
 
 feature: classcraft/cc_hero.jpg
 backdrop: classcraft/cc_bg.jpg

@@ -3,7 +3,11 @@ layout: project
 title: Citywide
 description: |
  <p>Branding and website for elevator planning/construction/maintenance consultants based out of New York.</p>
+ <p>Deliverables included logo system, branding guidelines, business cards, document templates, sell sheets, and a custom website.</p>
  <time>c. 2015</time>
+ <ul>
+ 	<li><a href="http://cec-nyc.co/">View live site</a></li>
+ </ul>
 
 feature: citywide/cw_hero.jpg
 backdrop: citywide/cw_bg.jpg

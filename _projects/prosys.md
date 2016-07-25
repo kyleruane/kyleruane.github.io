@@ -3,6 +3,7 @@ layout: project
 title: Pro-Sys
 description: |
  <p>Website for a line of professionally designed dental products. The goal of the design was to highlight the scientifically-proven advantages of using these products and to raise the profile of the web presence to the level of mass-market competitors.</p>
+ <p>Deliverables included custom website design and front-end implementation.</p>
  <time>c. 2015</time>
 
 feature: prosys/ps_hero.jpg

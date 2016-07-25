@@ -3,6 +3,7 @@ layout: project
 title: Barley
 description: |
  <p>Barley is a hosted website management platform built by the small team at Plain that removes a lot of the complexity found in typical CMS tools. With a nearly invisible interface, our goal was to make content editing easily accessible to everyone.</p>
+ <p>Project roles included UX considerations such as wireframes and user flow charts, feature planning and spec documents, app interface design, icon design, branding, user template design and development, website design and development, and transaction email design and development.</p>
  <time>c. 2013</time>
 
 feature: barley/editor.jpg

@@ -1,7 +1,10 @@
 form {
-	margin-top: 40px;
+	margin-top: 0;
 	margin-bottom: 100px;
 	padding-top: 30px;
+	@include sm {
+		margin-top: 40px;
+	}
 	> p {
 		margin-bottom: 28px;
 	}
@@ -10,6 +13,9 @@ form {
 		padding-left: 16px;
 		padding-right: 16px;
 		font-weight: 400;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 	}
 	.btn {
 		min-width: 100px; 
@@ -23,9 +29,10 @@ form {
 			@extend .form-control;
 			height: 42px;
 			font-size: 14px;
-			padding: 10px 20px 12px;
+			padding: 10px 14px 12px;
 			border-radius: 0;
 			@include sm {
+				padding: 10px 20px 12px;
 				height: 52px;
 				font-size: 16px;
 			}
@@ -116,6 +123,7 @@ form {
 	}
 }
 .form {
+	padding-top: 50px;
 	@include sm {
 		padding-top: 100px;
 		padding-bottom: 1px;

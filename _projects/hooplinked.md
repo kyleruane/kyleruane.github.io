@@ -3,6 +3,7 @@ layout: project
 title: Hooplinked
 description: |
  <p>Check-in/location based iOS app for planning and discovering pickup games nearby. Functionality included the ability to add and rate basketball courts, maintain a list of players with whom you frequently play, organizing games, and win (custom drawn) badges based on milestones.</p>
+ <p>Deliverables included wireframes and user flow charts, interface design, app icons, and badge illustrations.</p>
  <time>c. 2011</time>
 
 feature: hooplinked/mockup.jpg
