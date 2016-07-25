@@ -1,0 +1,214 @@
+.site-header {
+	height: 60px;
+	position: absolute;
+	width: 100%;
+	background: none;
+	border-radius: 0;
+	z-index: 10;
+	@include sm {
+		width: 420px;
+		@include rotate(90deg);
+		position: absolute;
+		top: 0;
+		left: 100%;
+		margin-left: -20px;
+		transform-origin: left top 0;
+	}
+	@include md {
+		margin-left: -26px;
+	}
+	&.single {
+		height: $header-height - 100px;
+	}
+	.logo {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		@include sm {
+			top: 14px;
+			left: 30px;
+			@include rotate(270deg);
+		}
+		@include md {
+			left: 40px;
+		}
+	}
+	.main-nav {
+	    position: absolute;
+	    top: 18px;
+	    @include sm {
+	    	left: 78px;
+	    }
+	    @include md {
+	    	left: 96px;
+	    }
+		> ul {
+			@extend .nav; 
+			@extend .navbar-nav;
+			float: none;
+			@include xs {
+				display: none;
+			}
+			> li {
+				@include heading;
+				font-size: 14px;
+				float: left;
+				&.active {
+					position: relative;
+					&:after {
+						content: " ";
+					    width: 36px;
+					    height: 1px;
+					    background: #ccc;
+					    position: absolute;
+					    top: 50%;
+					    margin-top: -1px;
+					    left: 50%;
+					    margin-left: -18px;
+						@include rotate(45deg);
+						//box-shadow: 0 0 0 1px white;
+					}
+					> a {
+						color: #ccc;
+						&:hover, &:focus, &:active {
+							color: #ccc;
+						}
+					}
+				}
+				> a {
+					color: $text-color;
+					padding: 0 18px;
+					line-height: 1.2;
+					&:hover, &:focus, &:active {
+						color: $text-color;
+						background: none;
+						text-decoration: none; 
+					}
+				}
+			}
+		}
+	}
+	&.bar {
+		@include sm {
+			height: 100px;
+			box-shadow: 0 1px 0 0 transparentize(black, .94);
+			top: 0;
+			left: 0;
+			margin-left: 0;
+			width: 100%;
+			@include rotate(0deg);
+		}
+		.logo {
+			@include sm {
+				left: 42px;
+				right: auto;
+				top: 38px;
+				@include rotate(0deg);
+			}
+		}
+		.main-nav {
+			position: static;
+			padding: 42px 24px;
+			> ul {
+				@include sm {
+					float: right;
+				}
+			}
+		}
+	}
+}
+.nav-toggle {
+	@extend .navbar-toggle;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	float: none;
+	margin: 10px 8px;
+	padding: 14px 12px;
+	border: none;
+	border-radius: 0;
+	display: block;
+	z-index: 24;
+	@media (min-width: 768px) {
+		display: none;
+	}
+	.icon-bar {
+		background: #333;
+		position: relative;
+		height: 1px;
+		@include transition(all .2s);
+	}
+	&.active {
+		.icon-bar {
+			&:nth-of-type(2) {
+				top: 5px;
+				@include rotate(45deg);
+			}
+			&:nth-of-type(3) {
+				background-color: transparent;
+			}
+			&:nth-of-type(4) {
+				top: -5px;
+				@include rotate(-45deg);
+			}
+		}
+	}
+}
+.mobile-menu {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: white;
+	padding: 21px 20px 22px;
+	z-index: 22;
+	.mobile-logo {
+		display: block;
+		width: 24px;
+		height: 24px;
+		margin: 0 0 0 1px;
+		padding: 0;
+		img {
+			display: block;
+		}
+	}
+	ul {
+		margin-top: 80px;
+		padding: 0;
+		list-style: none;
+		li {
+			@include heading;
+			font-size: 15px;
+			padding: 6px 0;
+			text-align: center;
+			&.active {				
+				a {
+					text-decoration: line-through;
+					color: #d2d2d2;
+				}
+			}
+			a {
+				text-decoration: none;
+				color: #333;
+				padding: 4px 0;
+				display: block;
+			}
+		} 
+	}
+	@include xs {
+		&.active {
+			display: block;
+		}
+	}
+}
+.placeholder {
+	height: 60px;
+	@include sm {
+		//height: 68px;
+	}
+	&.project {
+		height: 120px;
+	}
+}

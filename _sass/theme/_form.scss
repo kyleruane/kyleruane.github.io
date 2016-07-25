@@ -1,0 +1,296 @@
+form {
+	margin-top: 40px;
+	margin-bottom: 100px;
+	padding-top: 30px;
+	> p {
+		margin-bottom: 28px;
+	}
+	input[type=submit] {
+		text-transform: uppercase;
+		padding-left: 16px;
+		padding-right: 16px;
+		font-weight: 400;
+	}
+	.btn {
+		min-width: 100px; 
+		box-shadow: 0 1px 3px 0 fadeout(black, 85%);
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+	&.contact {
+		input[type=text], input[type=email] {
+			@extend .form-control;
+			height: 42px;
+			font-size: 14px;
+			padding: 10px 20px 12px;
+			border-radius: 0;
+			@include sm {
+				height: 52px;
+				font-size: 16px;
+			}
+		}
+		textarea {
+			@extend .form-control;
+			font-size: 14px;
+			padding: 18px 20px 20px;
+			min-height: 160px;
+			line-height: 1.9;
+			border-radius: 0;
+			@include sm {
+				height: 360px;
+				font-size: 16px;
+			}
+		} 
+		.button {
+			margin-top: 50px;
+		}
+		::-webkit-input-placeholder {
+		    font-family: $font-nav;
+		    text-transform: uppercase;
+		    font-weight: 400;
+		    letter-spacing: 1.25px;
+		    word-spacing: 1.5px;
+		    color: fadeout($text-light, 30%);
+		    font-size: 12px;
+		    opacity: 1;
+		    @include transition(all, .2s);
+		    @include sm {
+		    	font-size: 13px;
+		    }
+		}
+		:focus::-webkit-input-placeholder {
+			opacity: 0;
+		}
+		:-moz-placeholder {
+			font-family: $font-nav;
+		    text-transform: uppercase;
+		    font-weight: 400;
+		    letter-spacing: 1.25px;
+		    word-spacing: 1.5px;
+		    color: fadeout($text-light, 30%);
+		    font-size: 12px;
+		    opacity: 1;
+		    @include transition(all, .2s);
+		    @include sm {
+		    	font-size: 13px;
+		    }
+		}
+		:focus:-moz-placeholder {
+			opacity: 0;
+		}
+		::-moz-placeholder {
+			font-family: $font-nav;
+		    text-transform: uppercase;
+		    font-weight: 400;
+		    letter-spacing: 1.25px;
+		    word-spacing: 1.5px;
+		    color: fadeout($text-light, 30%);
+		    font-size: 12px;
+		    opacity: 1;
+		    @include transition(all, .2s);
+		    @include sm {
+		    	font-size: 13px;
+		    }
+		}
+		:focus::-moz-placeholder {
+			opacity: 0;
+		}
+		:-ms-input-placeholder {
+			font-family: $font-nav;
+		    text-transform: uppercase;
+		    font-weight: 400;
+		    letter-spacing: 1.25px;
+		    word-spacing: 1.5px;
+		    color: fadeout($text-light, 30%);
+		    font-size: 12px;
+		    opacity: 1;
+		    @include transition(all, .2s);
+		    @include sm {
+		    	font-size: 13px;
+		    }
+		}
+		:focus:-ms-input-placeholder {
+			opacity: 0;
+		}
+	}
+}
+.form {
+	@include sm {
+		padding-top: 100px;
+		padding-bottom: 1px;
+	}
+}
+.form-control {
+	border-color: #e4e4e4;
+	box-shadow: none;
+	&:focus, &:hover {
+		box-shadow: none;
+		outline: none;
+	}
+	&:active, &:focus {
+		border-color: #c4c4c4;
+	}
+}
+label {
+	font-size: 15px;
+}
+.fs-dropdown {
+	margin-top: 4px;
+}
+.fs-dropdown-options {
+	max-height: 160px;
+}
+.fs-dropdown-item {
+	&:focus, &:active {
+		outline: none;
+	}
+}
+.fs-dropdown-group {
+	font-weight: 600;
+	font-size: 12px;
+	color: #666;
+	border-color: #d8d8d8;
+	padding: 4px 10px;
+	background: #f7f7f7;
+}
+.fs-dropdown-item_selected {
+	position: relative;
+	&:after {
+		content: "\f00c";
+		font-family: $font-icon;
+		display: block;
+		width: 16px;
+		height: 16px;
+		text-align: center;
+		line-height: 14px;
+		font-size: 14px;
+		position: absolute;
+		top: 50%;
+		margin-top: -8px;
+		right: 10px;
+		color: #999;
+	}
+}
+
+// Search
+.search {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparentize(black, .10);
+	.wrap {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+	section {
+		height: 88px;
+		width: 100%;
+		padding: 0 20px;
+		@include sm {
+			padding: 0 120px;
+		}
+	}
+	form {
+		border: none;
+		border-bottom: 1px solid transparentize(white, .40);
+		position: relative;
+		padding-bottom: 30px;
+		input:not([type=submit]), .form-control {
+			background: none;
+			border: none;
+			height: 64px;
+			font-family: $font-title;
+			font-weight: 400;
+			font-size: 44px;
+			padding: 0;
+			color: white;
+			width: calc(100% - 40px);
+		}
+		input[type=submit] {
+			display: block;
+			width: 40px;
+			height: 40px;
+			text-indent: -10000px;
+			color: transparent;
+			font-size: 0;
+			position: absolute;
+			right: 0;
+			top: 12px;
+			background: url(../images/icon_search_button.svg) center center no-repeat;
+			background-size: 36px 36px;
+			opacity: .8;
+			@include transition(all, .3s);
+			margin-top: 0;
+			&:hover, &:active, &:focus {
+				border: none;
+				background: url(../images/icon_search_button.svg) center center no-repeat;
+				background-size: 36px 36px;
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+		::-webkit-input-placeholder {
+		    font-weight: 400;
+		    color: white;
+		    opacity: 1;
+		    @include transition(all, .2s);
+		}
+		:focus::-webkit-input-placeholder {
+			opacity: 0;
+		}
+		:-moz-placeholder {
+			font-weight: 400;
+		    color: white;
+		    opacity: 1;
+		    @include transition(all, .2s);
+		}
+		:focus:-moz-placeholder {
+			opacity: 0;
+		}
+		::-moz-placeholder {
+			font-weight: 400;
+		    color: white;
+		    opacity: 1;
+		    @include transition(all, .2s);
+		}
+		:focus::-moz-placeholder {
+			opacity: 0;
+		}
+		:-ms-input-placeholder {
+			font-weight: 400;
+		    color: white;
+		    opacity: 1;
+		    @include transition(all, .2s);
+		}
+		:focus:-ms-input-placeholder {
+			opacity: 0;
+		}
+	}
+	.search-close {
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 56px;
+		right: 56px;
+		background: url(../images/icon_search_close.svg) center center no-repeat;
+		background-size: 24px 24px;
+	}
+}
+#barley-form-message {
+	margin-top: 40px;
+	font-weight: 500;
+	@include sm {
+		margin-top: 60px;
+	}
+}

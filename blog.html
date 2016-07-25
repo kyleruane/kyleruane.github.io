@@ -1,130 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kyle Ruane, Multidisciplinary Designer & Aspiring Webmaster</title>
-  
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+---
+layout: default
+---
 
-  	<!-- Styles - Bootstrap, UI Scaffolding, Custom Theme -->
-  	<link rel="stylesheet" href="css/style.css">
+<nav class="blog-nav"></nav>
+    
+<main class="blog">
+    <div class="container">
+        <div class="content">
 
-  	<!--[if lt IE 9]>
-  	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
+            <h2 class="blog-title">Blog</h2>
 
-<body>
+            {% for post in site.posts %}
+            <a class="article" href="{{ post.url | prepend: site.baseurl }}">
+                <h3>{{ post.title }}</h3>
+                <div class="meta">
+                    <span class="date">{{ post.date | date: '%B %-d, %Y' }}</span>
+                </div>
+            </a>
+            {% endfor %}
 
-    <div class="site-wrapper">
-
-    <header class="site-header">
-        <div class="header-wrap">
-
-            <!-- Logo -->
-            <h1 class="logo">
-                <a href="/">
-                    <img src="images/logo_small.svg">
-                </a>
-                <span>Derp</span>
-            </h1>
-          	
-            <!-- Main Navigation -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="/">Work</a></li>
-                    <li><a href="/profile">Profile</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                </ul>
-            </nav>
-
+            <!--
+            <section class="pagination">
+                <nav>
+                    <a href="#">Newer Posts</a>
+                    <a href="#">Older Posts</a>
+                </nav>
+            </section>
+            -->
         </div>
-
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <span class="mobile-logo">
-                <img src="images/logo_small.svg">
-            </span>
-        </div>
-        <!-- Hamburger Button -->
-        <a href="#" class="nav-toggle" id="nav-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
-
-    </header>
-
-
-
-	<nav class="blog-nav"></nav>
-	
-	<main class="blog">
-		<div class="container">
-			<div class="content" style="min-height: 300px;">
-				<a class="article">
-					<h3 style="text-align:center; padding: 0;">Blog Will Be Right Back</h3>
-					<div class="meta">
-						<span class="date"></span>
-					</div>
-				</a>
-			</div>
-			
-		</div>
-	</main>
-
-	
-
-
-	<footer class="site-footer">
-		<div class="container">
-			<div class="row">
-		  		<div class="social">
-		  			<ul>
-		  				<li><a href="https://twitter.com/kyleruane"><i class="fa fa-twitter"></i></a></li>
-			  			<li><a href="https://www.instagram.com/kyleruane/"><i class="fa fa-instagram"></i></a></li>
-			  			<li><a href="https://dribbble.com/kyleruane"><i class="fa fa-dribbble"></i></a></li>
-			  		</ul>
-		  		</div>
-		  		<div class="copyright" data-barley="copyright_text" data-barley-editor="simple">
-					<p>© Kyle Ruane</p>
-			  	</div>
-		  	</div>
-		  </div>
-	</footer>
-
-	</div> <!-- closes site-wrapper -->
-
-	<div class="search">
-		<div class="wrap">
-			<section>
-				<form id="barley-search" action="/search">
-					<input class="form-control" type="text" name="barley-search-term" id="barley-search-term" placeholder="Search">
-					<input class="button" type="submit" value="Search">
-				</form>
-			</section>
-			<a class="search-close" href="#"></a>
-		</div>
-	</div>
-
-<!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/custom.modernizr.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.lightbox.js"></script>
-<script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
-<script type="text/javascript" src="js/formstone.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/imagesloaded.js"></script>
-<script type="text/javascript" src="js/masonry.js"></script>
-<script type="text/javascript" src="js/gray.js"></script>
-<script type="text/javascript" src="js/plain.js"></script>
-<script type="text/javascript" src="js/theme.js"></script>
-
-</body>
-</html>
+        
+    </div>
+</main>

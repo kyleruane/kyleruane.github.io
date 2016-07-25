@@ -1,0 +1,392 @@
+.blog {
+	padding: 80px 0 120px;
+	@include sm {
+		padding-top: 160px;
+	}
+	.content {
+		max-width: 768px;
+		margin: 0 auto;
+		@include sm {
+			padding-left: 80px;
+		}
+		@include md {
+			padding-left: 0;
+		}
+	}
+	.article {
+		padding: 24px 0;
+		position: relative;
+		border-bottom: $border-style;
+		display: block;
+		@include sm {
+			padding: 40px 20px;
+		}
+		h3 {
+			font-size: 16px;
+			line-height: 1.4;
+			margin: 0;
+			font-weight: 600;
+			@include sm {
+				font-size: 22px;
+				padding-right: 180px;
+			}
+		}
+		.meta {
+			margin-top: 6px;
+			color: transparentize($text-light, .15);
+			font-size: 11px;
+			@include md {
+				position: absolute;
+				font-size: 13px;
+				right: 20px;
+				top: 48px;
+				text-align: right;
+				margin: 0;	
+			}
+		}
+	}
+	article {
+		margin-bottom: 60px;
+		@include sm {
+			margin-bottom: 140px;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		&.post {
+			max-width: 800px;
+			margin-top: 20px;
+			@include md {
+				font-size: 17px;
+			}
+			p {
+				line-height: 1.9;
+				@include md {
+					font-size: 17px;
+					margin-bottom: 32px;
+				}
+			}
+		}
+		.text {
+			@include make-md-column(8);
+			@include lg {
+				padding-right: 80px;
+			}
+			p {
+				line-height: 1.9;
+				@include md {
+					font-size: 17px;
+				}
+			}
+		}
+		h3 {
+			font-size: 24px;
+			font-weight: 400;
+			margin-bottom: 40px;
+			margin-top: 0;
+			@include sm {
+				font-size: 34px;
+				margin-bottom: 50px;
+			}
+		}
+		.meta {
+			position: relative;
+			margin-top: 36px;
+			padding-top: 34px;
+			&:after {
+				content: " ";
+				display: block;
+				width: 32px;
+				height: 3px;
+				background: transparentize($border-color, .3);
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.author, .date {
+				font-family: $font-title;
+				font-weight: 300;
+				font-size: 14px;
+				@include xs {
+					display: block;
+				}
+			}
+		}
+	}
+	.pagination {
+		margin: 68px 0 60px;
+		@include sm {
+			padding: 0 20px; 
+		}
+		a {
+			font-size: 14px;
+			padding: 4px 20px;
+			border-right: $border-style;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+				border: none;
+			}
+		}
+	}
+	.more-link {
+		display: inline-block;
+		margin: 120px 0 60px;
+		color: $text-color;
+	}
+	.blog-title {
+		font-size: 24px;
+		font-weight: 900;
+		margin: 30px 0 20px;
+		@include sm {
+			display: none;
+		}
+	}
+}
+
+.blog-nav {
+	height: 128px;
+	display: none;
+	@include sm {
+		height: 68px;
+	}
+}
+.post {
+	.feature {
+		margin-bottom: 50px;
+		@include sm {
+			margin-bottom: 80px;
+			margin-top: 80px;
+		}
+		@include md {
+			margin-bottom: 90px;
+		}
+	}
+	article {
+		max-width: 666px;
+		margin: 0 auto 100px;
+		header {
+			margin-bottom: 40px;
+			@include sm {
+				margin-bottom: 68px;
+			}
+			h2 {
+				font-weight: 900;
+				font-size: 24px;
+				margin-top: 0;
+				@include sm {
+					font-size: 36px;
+				}
+			}
+		}
+		.meta {
+			color: transparentize($text-light, .15);
+			font-size: 12px;
+			margin-bottom: 14px;
+			@include sm {
+				font-size: 13px;
+				margin-bottom: 26px;
+			}
+		}
+		h2,h3,h4 {
+			margin: 40px 0 36px;
+			font-weight: 700;
+		}
+		h2 {
+			font-size: 20px;
+			@include sm {
+				font-size: 24px;
+			}
+		}
+		h3 {
+			font-size: 18px;
+			@include sm {
+				font-size: 22px;
+			}
+		}
+		h4 {
+			font-size: 16px;
+			@include sm {
+				font-size: 18px;
+			}
+		}
+		a {
+			color: #111;
+			font-weight: 400;
+			border-bottom: $border-style;
+		}
+		ul, ol {
+			margin: 36px 0 40px;
+			li {
+				line-height: 1.6;
+				padding: 4px 0;
+			}
+		}
+		blockquote {
+			margin: 40px 0 42px;
+			padding: 32px 0;
+			border: none;
+			border-top: $border-style;
+			border-bottom: $border-style;
+		}
+		hr {
+			margin: 40px 0;
+		}
+	}
+	.images {
+		@include clearfix();
+	    margin: 20px auto;
+	    @include sm {
+	    	margin: 68px -10px 40px;
+	    }
+		p {
+			margin-bottom: 20px;
+			@include sm {
+				margin: 0;
+			}
+		}
+		img {
+			@include sm {
+				border: 10px solid white;
+			}
+		}	
+		.half {
+			@include sm {
+				width: 50%;
+				float: left;
+			}
+		}	
+		.third {
+			@include sm {
+				width: 50%;
+				float: left;
+			}
+			@include lg {
+				width: 33.333333%;
+			}
+		}
+	}
+	.text {
+		@include make-row();
+		padding: 80px 0 80px;
+		max-width: 900px;
+		margin: 0 auto;
+		@include sm {
+			padding: 0 20px 120px;
+		}
+		.wrapper {
+			border-top: $border-style;
+			padding-top: 40px;
+		}
+		article {			
+			@include make-md-column(8);
+			max-width: 666px;
+			margin: 0 auto 60px;
+			font-size: 15px;
+			@include sm {
+				font-size: 16px;
+			}
+			@include md {
+				float: right;
+			}
+			@include md {
+				max-width: 100%;
+			}
+			h2 {
+				margin-top: 52px;
+			}
+			header {
+				h2 {
+					margin-top: 0;
+					font-weight: 500;
+				}
+			}
+			p {
+				font-size: 15px; 
+				@include sm {
+					font-size: 16px;
+				}
+			}
+			* {
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+		aside {
+			@include make-md-column(4);
+			max-width: 666px;
+			margin: 0 auto;
+			@include md {
+				max-width: 100%;
+				padding-right: 30px;
+			}
+			.sidebar {
+				@include make-sm-column(6);
+				@include make-md-column(12);
+				font-size: 15px;
+				margin-bottom: 40px;
+				@include sm {
+					margin-bottom: 20px;
+				}
+			}
+			h2,h3,h4 {
+				margin: 40px 0 28px;
+				font-weight: 700;
+			}
+			h2 {
+				font-size: 20px;
+				@include sm {
+					font-size: 20px;
+				}
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+			h3 {
+				font-size: 18px;
+				@include sm {
+					font-size: 18px;
+				}
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+			h4 {
+				font-size: 16px;
+				@include sm {
+					font-size: 16px;
+				}
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+			a {
+				color: #111;
+				font-weight: 400;
+				border-bottom: $border-style;
+			}
+			ul, ol {
+				margin: 20px 0 26px;
+				list-style: none;
+				padding: 0;
+				li {
+					line-height: 1.5;
+					padding: 4px 0;
+				}
+			}
+			p {
+				font-size: inherit;
+			}
+		}
+	}
+	&.profile {
+		.feature {
+			@include xs {
+				display: none;
+			}
+		}
+	}
+}

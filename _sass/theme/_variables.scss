@@ -1,0 +1,98 @@
+// Fonts
+
+$font-nav: "Karla", sans-serif;
+$font-title: "freight-text-pro", sans-serif;
+$font-copy: "Source Sans Pro", sans-serif;
+$font-icon: "FontAwesome";
+
+
+// Colors
+
+$text-color: 	#444;
+$text-light: 	#666;
+$heading-light: #999;
+$border-color: 	#e8e8e8;
+$gray-bg: 		#fafafa;
+
+
+// Sizes
+
+$xs: 	767px;
+$sm: 	768px;
+$md: 	992px;
+$lg: 	1200px;
+$xl: 	1400px;
+$xxl: 	1600px;
+
+$header-height: 460px;
+
+@mixin xs {
+ 	@media (max-width: #{$xs}) {
+    	@content;
+  	}
+}
+@mixin sm {
+ 	@media (min-width: #{$sm}) {
+    	@content;
+  	}
+}
+@mixin md {
+ 	@media (min-width: #{$md}) {
+    	@content;
+  	}
+}
+@mixin lg {
+ 	@media (min-width: #{$lg}) {
+    	@content;
+  	}
+}
+@mixin xl {
+ 	@media (min-width: #{$xl}) {
+    	@content;
+  	}
+}
+@mixin xxl {
+ 	@media (min-width: #{$xxl}) {
+    	@content;
+  	}
+}
+
+$border-style: 1px solid $border-color;
+
+
+@mixin uppercase {
+	text-transform: uppercase;
+	letter-spacing: .75px;
+	word-spacing: 1px;
+}
+@mixin heading {
+	font-family: $font-nav;
+	font-weight: 400;
+	@include uppercase;
+}
+@mixin section-heading {
+	@include heading;
+	color: $heading-light;
+	font-size: 13px;
+}
+@mixin subtitle {
+	font-size: 15px;
+	color: transparentize($text-light, .3);
+	font-weight: 400;
+	margin-top: 20px;
+	line-height: 1.8;
+	@include sm {
+		font-size: 18px;
+		margin-top: 40px;
+		line-height: 1.9;
+	}
+	&:first-child {
+		margin-top: 0;
+	}
+}
+@mixin background {
+	background-size: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
