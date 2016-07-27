@@ -9,7 +9,7 @@
 		position: absolute;
 		top: 101px;
 		@include rotate(90deg);
-		right: -14px;
+		right: -21px;
 		font-family: $font-nav;
 		text-transform: uppercase;
 		color: white;
@@ -19,6 +19,9 @@
 		opacity: .7;
 		@include sm {
 			display: block;
+		}
+		@include lg {
+			right: -14px;
 		}
 	}
 	@include sm {
