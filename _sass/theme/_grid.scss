@@ -1,6 +1,26 @@
 .work {
 	padding: 0;
 	overflow: hidden;
+	position: relative;
+	&:after {
+		content: "Select Projects";
+		display: none;
+		height: 20px;
+		position: absolute;
+		top: 101px;
+		@include rotate(90deg);
+		right: -14px;
+		font-family: $font-nav;
+		text-transform: uppercase;
+		color: white;
+		font-size: 14px;
+		letter-spacing: .75px;
+		word-spacing: 4px;
+		opacity: .7;
+		@include sm {
+			display: block;
+		}
+	}
 	@include sm {
 		padding: 0;
 	}
