@@ -11,46 +11,31 @@
                             
 Kyle Ruane
 
-Contact: http://kyleruane.com/hire#contact-form
-Twitter: @kyleruane
+http://kyleruane.com/hire#contact-form
+@kyleruane
 
 
 
 /* SITE */
 
 
-Platform: 				Jekyll
-Templating: 			Liquid
-CSS Pre-processing: 	Sass
-CSS Framework:			Bootstrap
-Hosting, Versioning: 	GitHub
-JS Libraries:			jQuery
-						Modernizr
-						Bootstrap
-						Jasny Bootstrap
-						Formstone
-						FitVids
+Platform: Jekyll
+Templating: Liquid
+CSS Pre-processing: Sass
+CSS Framework: Bootstrap
+Hosting, Versioning: GitHub
+JS Libraries: jQuery, Modernizr, Bootstrap, Jasny Bootstrap, Formstone, FitVids
 
-Photos:					Unsplash - unsplash.com
+Photos:	Unsplash - unsplash.com
 
-Fonts:					Freight Text Pro
-						by GarageFonts - garagefonts.com
-						served by Typekit
-
-						Karla
-						by Jonny Pinhorn - jonnypinhorn.com
-						served by Google
-
-						Source Sans
-						by Adobe - github.com/adobe-fonts/source-sans-pro
-						served by Google
+Fonts: Freight Text Pro, by GarageFonts - garagefonts.com, served by Typekit;  Karla, by Jonny Pinhorn - jonnypinhorn.com, served by Google;  Source Sans, by Adobe - github.com/adobe-fonts/source-sans-pro, served by Google
 
 
 
 /* Tools */
 
 
-Text Editor:			Sublime Text
-Graphics Editor: 		Photoshop
-Vector Editor:			Illustrator
+Text Editor: Sublime Text
+Graphics Editor: Photoshop
+Vector Editor: Illustrator
 
