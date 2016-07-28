@@ -1,0 +1,56 @@
+ __  __    __  __    __        ______       ______    __  __    ______    __   __    ______    
+/\ \/ /   /\ \_\ \  /\ \      /\  ___\     /\  == \  /\ \/\ \  /\  __ \  /\ "-.\ \  /\  ___\   
+\ \  _"-. \ \____ \ \ \ \____ \ \  __\     \ \  __<  \ \ \_\ \ \ \  __ \ \ \ \-.  \ \ \  __\   
+ \ \_\ \_\ \/\_____\ \ \_____\ \ \_____\    \ \_\ \_\ \ \_____\ \ \_\ \_\ \ \_\\"\_\ \ \_____\ 
+  \/_/\/_/  \/_____/  \/_____/  \/_____/     \/_/ /_/  \/_____/  \/_/\/_/  \/_/ \/_/  \/_____/
+
+
+
+/* ME */
+
+                            
+Kyle Ruane
+
+Contact: http://kyleruane.com/hire#contact-form
+Twitter: @kyleruane
+
+
+
+/* SITE */
+
+
+Platform: 				Jekyll
+Templating: 			Liquid
+CSS Pre-processing: 	Sass
+CSS Framework:			Bootstrap
+Hosting, Versioning: 	GitHub
+JS Libraries:			jQuery
+						Modernizr
+						Bootstrap
+						Jasny Bootstrap
+						Formstone
+						FitVids
+
+Photos:					Unsplash - unsplash.com
+
+Fonts:					Freight Text Pro
+						by GarageFonts - garagefonts.com
+						served by Typekit
+
+						Karla
+						by Jonny Pinhorn - jonnypinhorn.com
+						served by Google
+
+						Source Sans
+						by Adobe - github.com/adobe-fonts/source-sans-pro
+						served by Google
+
+
+
+/* Tools */
+
+
+Text Editor:			Sublime Text
+Graphics Editor: 		Photoshop
+Vector Editor:			Illustrator
+
