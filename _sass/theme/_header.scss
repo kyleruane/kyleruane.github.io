@@ -100,15 +100,21 @@
 		}
 		.logo {
 			@include sm {
-				left: 42px;
+				left: 38px;
 				right: auto;
 				top: 38px;
 				@include rotate(0deg);
 			}
+			@include xl {
+				left: 42px;
+			}
 		}
 		.main-nav {
 			position: static;
-			padding: 42px 24px;
+			padding: 42px 18px;
+			@include xl {
+				padding: 42px 24px;
+			}
 			> ul {
 				@include sm {
 					float: right;
