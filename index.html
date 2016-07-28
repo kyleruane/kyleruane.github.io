@@ -17,6 +17,7 @@ layout: default
 
         {% assign projects = site.projects | sort: 'date' %}
         {% for projects in site.projects %}
+        {% unless projects.category == "collection"%}
 
         <a href="{{ site.baseurl }}{{ projects.url }}" class="item {{ projects.size }}">
             <figure class="background">
@@ -28,10 +29,23 @@ layout: default
                 <div class="image-placeholder thumb"><img src="{{site.project_img_path}}{{ projects.thumb }}"></div>
             </figure>
         </a>
-        
+        {% endunless %}
         {% endfor %}
         
     </div>
+</section>
+
+<section class="collections">
+    <h4>Collections</h4>
+    <ul>
+        {% for projects in site.projects %}
+        {% if projects.category == "collection"%}
+
+        <li><a href="{{ site.baseurl }}{{ projects.url }}">{{ projects.title }}</a></li>
+
+        {% endif %}
+        {% endfor %}
+    </ul>
 </section>
 
 <section class="outro">

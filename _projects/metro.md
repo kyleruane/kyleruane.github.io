@@ -15,14 +15,14 @@ category: UI
 size: normal
 ---
 
-![Image Metro Homepage]({{site.project_img_path}}metro/homepage.jpg)
+![Metro Homepage]({{site.project_img_path}}metro/homepage.jpg)
 
-![Image Metro Product Page]({{site.project_img_path}}metro/page_a.jpg)
+![Metro Product Page]({{site.project_img_path}}metro/page_a.jpg)
 
-![Image Metro Category Page & Literature Repository]({{site.project_img_path}}metro/page_b.jpg)
+![Metro Category Page & Literature Repository]({{site.project_img_path}}metro/page_b.jpg)
 
-![Image Metro Site Navigation]({{site.project_img_path}}metro/navbar.jpg)
+![Metro Site Navigation]({{site.project_img_path}}metro/navbar.jpg)
 
-![Image Metro Literature Detail]({{site.project_img_path}}metro/modal.jpg)
+![Metro Literature Detail]({{site.project_img_path}}metro/modal.jpg)
 
-![Image Metro Site Wireframes]({{site.project_img_path}}metro/wireframes.jpg)
+![Metro Site Wireframes]({{site.project_img_path}}metro/wireframes.jpg)

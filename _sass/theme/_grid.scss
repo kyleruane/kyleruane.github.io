@@ -240,3 +240,62 @@
 		clear: both;
 	}
 }
+.collections {
+	padding: 50px 20px 50px;
+	@include clearfix();
+	//background: transparentize($gray-bg, .4);
+	@include sm { 
+		padding: 60px 48px 100px;
+	}
+	@include md { 
+		padding: 60px 68px 160px;
+	}
+	h4 {
+		font-family: $font-nav;
+		text-transform: uppercase;
+		letter-spacing: .5px;
+		word-spacing: 1.5px;
+		font-weight: 400;
+		font-size: 14px;
+		padding: 0;
+		margin-bottom: 20px;
+		@include sm { 
+			padding: 0 20px;
+			margin-bottom: 60px;
+		}
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		@include sm { 
+			padding: 0 20px;
+		}
+		li {
+			border-bottom: $border-style;
+			a {
+				display: block;
+				padding: 36px 0 38px;
+				font-family: $font-title;
+				color: $text-light;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 1.4;
+				position: relative;
+				&:after {
+					content: "";
+					display: block;
+					height: 12px;
+					width: 12px;
+					border: 1px solid;
+					border-color: darken($border-color, 20%) darken($border-color, 20%) transparent transparent;
+					@include rotate(45deg);
+					position: absolute;
+					right: 6px;
+					top: 50%;
+					margin-top: -6px;
+				}
+			}
+		}
+	}
+}

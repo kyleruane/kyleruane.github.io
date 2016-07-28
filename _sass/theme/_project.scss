@@ -9,9 +9,9 @@
 	}
 	&.project {
 		@include sm {
-			padding-right: 10px;
+			padding-right: 0;
 		}
-		@include md {
+		@include xl {
 			padding-right: 10px;
 		}
 	}
@@ -33,7 +33,7 @@
 		margin-bottom: 0;
 		width: 180px;
 		position: absolute;
-		left: 60px;
+		left: 38px;
 	}
 	@include md {
 		width: 220px;
@@ -42,7 +42,8 @@
 		width: 260px;
 	}
 	@include xl {
-		width: 300px;	
+		width: 290px;
+		left: 60px;
 	}
 	@include xxl {
 		height: calc(100% - 120px);
@@ -59,7 +60,7 @@
 			width: 260px;
 		}
 		@include xl {
-			width: 300px;	
+			width: 290px;	
 		}
 	}
 	h2 {
@@ -111,10 +112,10 @@
 .project-content {
 	margin-bottom: 60px;
 	@include sm {
-		margin-left: 200px;
+		margin-left: 220px;
 	}
 	@include md {
-		margin-left: 244px;
+		margin-left: 260px;
 	}
 	@include lg {
 		margin-left: 300px;
