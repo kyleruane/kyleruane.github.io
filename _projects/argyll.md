@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Argyll Studio
+title: Argyll Studios
 description: |
  <p>Branding, design, and all things visual for a studio I ran with <a href="https://twitter.com/timwco">@timwco</a> that specialized in custom WordPress solutions.</p>
  <time>c. 2012</time>
