@@ -1,4 +1,4 @@
----
+	---
 layout: project
 title: eCommerce
 description: |
@@ -33,7 +33,7 @@ size: normal
 
 ![Private Cellars Mobile]({{site.project_img_path}}private-cellars/mobile_pages.jpg)
 
-![Yumza Store Design]({{site.project_img_path}}yumza/mobile_pages.jpg)
+![Yumza Store Design]({{site.project_img_path}}yumza/hero.jpg)
 
 <p class="half"><img src="{{site.project_img_path}}yumza/yz_prod.jpg"></p>
 <p class="half"><img src="{{site.project_img_path}}yumza/yz_popin.jpg"></p>
