@@ -1,4 +1,4 @@
-	---
+---
 layout: project
 title: eCommerce
 description: |
