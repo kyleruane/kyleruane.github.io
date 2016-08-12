@@ -106,12 +106,17 @@ em {
     font-weight: 300;
 }
 pre {
-    background: #ebebeb;
+    background: $text-light;
     border: none;
     font-family: "Monaco";
-    font-size: 16px;
-    color: #666;
-    padding: 20px;
+    font-size: 13px;
+    color: $gray-bg;
+    padding: 24px;
+    border-radius: 0;
+    margin: 40px 0;
+    .commented {
+        color: #ddd;
+    }
 }
 code {
     color: darken($text-color, 5%);

@@ -11,17 +11,11 @@ github_username:  	kyleruane
 # Build settings
 markdown: 			kramdown
 
-# Pagination
-#paginate: 16
-#paginate_path: "/blog/page:num/"
-
+# Collections
 collections:
   projects:
     output: true
     permalink: /project/:path
-
-# Gems
-#gems: [jekyll-paginate]
 
 # Image bucket path
 img_path: https://s3.amazonaws.com/kyleruane.com/images/
