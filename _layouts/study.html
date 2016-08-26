@@ -1,0 +1,23 @@
+{% include head.html %}
+{% include header_bar.html %}
+
+    <div class="placeholder study"></div>
+
+	<main class="single study">
+			
+		<div class="study-intro" style="background-image: url({{site.project_img_path}}{{ page.feature }});">
+			<div class="content">
+				<h2>{{ page.title }}</h2>
+	  			<div>
+		  			{{ page.description }}
+		  		</div>
+		  	</div>
+		</div>
+
+		{{ content }}
+
+	</main>
+
+	{% include footer.html %}
+</body>
+</html>

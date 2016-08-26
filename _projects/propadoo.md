@@ -19,4 +19,8 @@ size: half
 
 ![Propadoo App]({{site.project_img_path}}propadoo/app_screens.jpg)
 
+![Propadoo App]({{site.project_img_path}}propadoo/dash_2_crop.jpg)
+
+![Propadoo App]({{site.project_img_path}}propadoo/dash_3_crop.jpg)
+
 ![Propadoo Prop Interface]({{site.project_img_path}}propadoo/prop.jpg)

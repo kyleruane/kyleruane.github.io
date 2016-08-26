@@ -15,6 +15,18 @@
 			padding-right: 10px;
 		}
 	}
+	&.study {
+		padding: 0 0 60px;
+		@include sm {
+			padding: 0 0 60px;
+		}
+		@include md {
+			padding: 0 0 60px;
+		}
+		@include xl {
+			padding: 0 0 60px;
+		}
+	}
 	&.contact-form {
 		@include sm {
 			padding-right: 0;
@@ -161,6 +173,140 @@
 			@include lg {
 				width: 33.333333%;
 			}
+		}
+	}
+}
+.study-intro {
+	padding: 40px 0 100px;
+	@include background;
+	@include sm {
+		padding: 100px 0 500px;
+	}
+	@include lg {
+		padding: 200px 0 700px;
+	}
+	.content {
+		padding: 0 20px;
+		@include sm {
+			width: 50%;
+			padding-left: 80px;
+		}
+		@include lg {
+			width: 33.3333%;
+			padding-left: 80px;
+		}
+		h2 {
+			font-size: 24px;
+			margin-bottom: 32px;
+			@include sm {
+				font-size: 30px;
+			}
+			@include lg {
+				font-size: 40px;
+			}
+		}
+	}
+}
+.study {
+	.middle {
+		.content {
+			max-width: 666px;
+			padding: 0 20px;
+			margin: 0 auto;
+			text-align: center;
+			h3 {
+				font-size: 20px;
+				margin-bottom: 30px;
+				@include sm {
+					font-size: 28px;
+				}
+			}
+		}
+	}
+	.righty {
+		@include sm {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		.content {
+			padding: 0 20px;
+			@include sm {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				//flex: 1;
+				width: 46%;
+				//float: right;
+				padding-right: 40px;
+				padding-left: 40px;
+			}
+			@include lg {
+				width: 37%;
+				padding-right: 120px;
+			}
+			h3 {
+				font-size: 20px;
+				margin-bottom: 30px;
+				@include sm {
+					font-size: 28px;
+				}
+			}
+		}
+		figure {
+			@include sm {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				flex: 1;
+				width: 54%;
+				//float: left;
+			}
+			@include lg {
+				width: 63%;
+			}
+		}
+	}
+	.lefty {
+		display: flex;
+		.content {
+			padding: 0 20px;
+			@include sm {
+				width: 46%;
+				float: left;
+				padding-left: 80px;
+			}
+			@include lg {
+				width: 37%;
+				padding-left: 120px;
+			}
+			h3 {
+				font-size: 20px;
+				margin-bottom: 30px;
+				@include sm {
+					font-size: 28px;
+				}
+			}
+		}
+		figure {
+			@include sm {
+				width: 54%;
+				float: right;
+			}
+			@include lg {
+				width: 63%;
+			}
+		}
+	}
+	section {
+		@include clearfix;
+		padding: 20px 0;
+		@include sm {
+			padding: 120px 0;
+		}
+		@include lg {
+			padding: 200px 0;
 		}
 	}
 }
