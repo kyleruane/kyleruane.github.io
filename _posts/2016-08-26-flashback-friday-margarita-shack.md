@@ -13,4 +13,4 @@ feature: blog/spacer.gif
 ![Margarita Shack Detail]({{site.project_img_path}}flashback/margarita_shack_slider.jpg)
 
 <br>
-Online shop design for proprietors of a margarita mix. This one was heavy on the graphics, complete with a pretty tricky repeating board/paper texture background tile. It worked though as the goal was to convey the whole beach vacation feeling to potential customers. Done in 2008.
+Online shop design for proprietors of a margarita mix. This one was super heavy on the graphics, complete with a pretty tricky repeating board background tile. It worked though as the goal was to convey the whole beach vacation feeling to potential customers. Done in 2008.
