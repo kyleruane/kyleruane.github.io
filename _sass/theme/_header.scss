@@ -24,6 +24,11 @@
 		position: absolute;
 		top: 20px;
 		left: 20px;
+		background-image: url(../images/logo_super_thin.svg);
+		background-size: 20px auto;
+		background-position: center center;
+		background-repeat: no-repeat;
+		opacity: .7;
 		@include sm {
 			top: 14px;
 			left: 30px;
@@ -43,7 +48,7 @@
 	    	left: 96px;
 	    }
 		> ul {
-			@extend .nav; 
+			@extend .nav;
 			@extend .navbar-nav;
 			float: none;
 			@include xs {
@@ -51,22 +56,22 @@
 			}
 			> li {
 				@include heading;
-				font-size: 14px;
+				font-size: 10px;
+				letter-spacing: 1.75px;
 				float: left;
 				&.active {
 					position: relative;
 					&:after {
 						content: " ";
-					    width: 36px;
-					    height: 1px;
-					    background: #ccc;
-					    position: absolute;
-					    top: 50%;
-					    margin-top: -1px;
-					    left: 50%;
-					    margin-left: -18px;
-						@include rotate(45deg);
-						//box-shadow: 0 0 0 1px white;
+				    width: 30px;
+				    height: 1px;
+				    background: #ccc;
+				    position: absolute;
+				    top: 50%;
+				    margin-top: -1px;
+				    left: 50%;
+				    margin-left: -15px;
+						@include rotate(-45deg);
 					}
 					> a {
 						color: #ccc;
@@ -78,11 +83,11 @@
 				> a {
 					color: $text-color;
 					padding: 0 18px;
-					line-height: 1.2;
+					line-height: 16px;
 					&:hover, &:focus, &:active {
 						color: $text-color;
 						background: none;
-						text-decoration: none; 
+						text-decoration: none;
 					}
 				}
 			}
@@ -171,13 +176,13 @@
 	padding: 21px 20px 22px;
 	z-index: 22;
 	.mobile-logo {
-		display: block;
+		display: none;
 		width: 24px;
 		height: 24px;
 		margin: 0 0 0 1px;
 		padding: 0;
 		img {
-			display: block;
+			display: none;
 		}
 	}
 	ul {
@@ -189,7 +194,7 @@
 			font-size: 15px;
 			padding: 6px 0;
 			text-align: center;
-			&.active {				
+			&.active {
 				a {
 					text-decoration: line-through;
 					color: #d2d2d2;
@@ -201,7 +206,7 @@
 				padding: 4px 0;
 				display: block;
 			}
-		} 
+		}
 	}
 	@include xs {
 		&.active {

@@ -72,7 +72,7 @@
 			width: 260px;
 		}
 		@include xl {
-			width: 290px;	
+			width: 290px;
 		}
 	}
 	h2 {
@@ -80,12 +80,12 @@
 		margin-top: 0;
 		max-width: 100%;
 		font-family: $font-title;
-		font-weight: 700;
-		font-size: 20px;
+		font-weight: 500;
+		font-size: 11px;
 		margin-bottom: 30px;
 		@include sm {
-			font-size: 20px;
-			margin-bottom: 42px;
+			font-size: 14px;
+			margin-bottom: 36px;
 		}
 		i {
 			font-size: 16px;
@@ -98,11 +98,11 @@
 		}
 	}
 	p {
-		font-size: inherit; 
+		font-size: inherit;
 	}
 	time {
-		//font-style: italic;
-		font-family: $font-title;
+		font-style: italic;
+		font-family: $font-copy;
 		font-weight: 400;
 		color: transparentize($text-light, .2);
 	}
@@ -158,13 +158,13 @@
 			@include sm {
 				border: 10px solid white;
 			}
-		}	
+		}
 		.half {
 			@include sm {
 				width: 50%;
 				float: left;
 			}
-		}	
+		}
 		.third {
 			@include sm {
 				width: 50%;
@@ -311,7 +311,7 @@
 	}
 }
 .owner {
-	figure {	
+	figure {
 		background: #f6f6f6;
 		padding: 12px;
 		margin-bottom: 16px;

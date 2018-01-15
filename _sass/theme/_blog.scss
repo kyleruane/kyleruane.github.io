@@ -22,12 +22,13 @@
 			padding: 40px 20px;
 		}
 		h3 {
-			font-size: 16px;
+			font-size: 11px;
 			line-height: 1.4;
 			margin: 0;
-			font-weight: 600;
+			font-weight: 500;
+			word-spacing: 3px;
 			@include sm {
-				font-size: 22px;
+				font-size: 13px;
 				padding-right: 180px;
 			}
 		}
@@ -39,9 +40,9 @@
 				position: absolute;
 				font-size: 13px;
 				right: 20px;
-				top: 48px;
+				top: 36px;
 				text-align: right;
-				margin: 0;	
+				margin: 0;
 			}
 		}
 	}
@@ -81,7 +82,7 @@
 		}
 		h3 {
 			font-size: 24px;
-			font-weight: 400;
+			font-weight: 500;
 			margin-bottom: 40px;
 			margin-top: 0;
 			@include sm {
@@ -116,7 +117,7 @@
 	.pagination {
 		margin: 68px 0 60px;
 		@include sm {
-			padding: 0 20px; 
+			padding: 0 20px;
 		}
 		a {
 			font-size: 14px;
@@ -167,17 +168,20 @@
 	article {
 		max-width: 666px;
 		margin: 0 auto 100px;
+		@include sm {
+			margin-bottom: 200px
+		}
 		header {
 			margin-bottom: 40px;
 			@include sm {
 				margin-bottom: 68px;
 			}
 			h2 {
-				font-weight: 900;
-				font-size: 24px;
+				font-weight: 500;
+				font-size: 16px;
 				margin-top: 0;
 				@include sm {
-					font-size: 36px;
+					font-size: 18px;
 				}
 			}
 		}
@@ -192,24 +196,24 @@
 		}
 		h2,h3,h4 {
 			margin: 40px 0 36px;
-			font-weight: 700;
+			font-weight: 500;
 		}
 		h2 {
-			font-size: 20px;
-			@include sm {
-				font-size: 24px;
-			}
-		}
-		h3 {
-			font-size: 18px;
-			@include sm {
-				font-size: 22px;
-			}
-		}
-		h4 {
 			font-size: 16px;
 			@include sm {
 				font-size: 18px;
+			}
+		}
+		h3 {
+			font-size: 14px;
+			@include sm {
+				font-size: 16px;
+			}
+		}
+		h4 {
+			font-size: 11px;
+			@include sm {
+				font-size: 13px;
 			}
 		}
 		a {
@@ -251,13 +255,13 @@
 			@include sm {
 				border: 10px solid white;
 			}
-		}	
+		}
 		.half {
 			@include sm {
 				width: 50%;
 				float: left;
 			}
-		}	
+		}
 		.third {
 			@include sm {
 				width: 50%;
@@ -280,7 +284,7 @@
 			border-top: $border-style;
 			padding-top: 40px;
 		}
-		article {			
+		article {
 			@include make-md-column(8);
 			max-width: 666px;
 			margin: 0 auto 60px;
@@ -304,7 +308,7 @@
 				}
 			}
 			p {
-				font-size: 15px; 
+				font-size: 15px;
 				@include sm {
 					font-size: 16px;
 				}
@@ -334,7 +338,7 @@
 			}
 			h2,h3,h4 {
 				margin: 40px 0 28px;
-				font-weight: 700;
+				font-weight: 500;
 			}
 			h2 {
 				font-size: 20px;
@@ -355,9 +359,9 @@
 				}
 			}
 			h4 {
-				font-size: 16px;
+				font-size: 14px;
 				@include sm {
-					font-size: 16px;
+					font-size: 14px;
 				}
 				&:first-child {
 					margin-top: 0;
