@@ -7,10 +7,10 @@
 		max-width: 768px;
 		margin: 0 auto;
 		@include sm {
-			padding-left: 80px;
+			padding-right: 80px;
 		}
 		@include md {
-			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 	.article {
@@ -163,6 +163,15 @@
 		}
 		@include md {
 			margin-bottom: 90px;
+		}
+		&.nope {
+			margin-bottom: 0;
+			@include sm {
+				margin-bottom: 0;
+			}
+			@include md {
+				margin-bottom: 0;
+			}
 		}
 	}
 	article {

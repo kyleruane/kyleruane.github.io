@@ -2,8 +2,9 @@
 layout: post
 title:  Flashback Friday&#58; Margarita Shack
 date:   2016-08-26
-categories: 
+categories:
 feature: blog/spacer.gif
+visible: nope
 ---
 
 ![Margarita Shack Store Design]({{site.project_img_path}}flashback/margarita_shack_page.jpg)

@@ -4,8 +4,9 @@ title:  NYCTA Graphics Manual
 date:   2014-09-12
 categories:
 feature: spacer.gif
+visible: nope
 ---
-Pentagram designers [Jesse Reed](http://www.jessereedfromohio.com/) and [Hamish Smyth](http://www.hamishsmyth.com/) are [kickstarting a one-time run of books representing showing scans of the original Graphic Standards Manual for the New York City Transit Authority](https://www.kickstarter.com/projects/thestandardsmanual/full-size-reissue-of-the-nycta-graphics-standards). The manual covers the entire visual language for New York subway type, colors, layouts, iconography, map design, signage and everything else that makes up one of the most recognizable graphic systems in existence. 
+Pentagram designers [Jesse Reed](http://www.jessereedfromohio.com/) and [Hamish Smyth](http://www.hamishsmyth.com/) are [kickstarting a one-time run of books representing showing scans of the original Graphic Standards Manual for the New York City Transit Authority](https://www.kickstarter.com/projects/thestandardsmanual/full-size-reissue-of-the-nycta-graphics-standards). The manual covers the entire visual language for New York subway type, colors, layouts, iconography, map design, signage and everything else that makes up one of the most recognizable graphic systems in existence.
 
 <br>![NYCTA Manual]({{site.blog_img_path}}2014/nycta.jpg)
 
@@ -18,4 +19,3 @@ The design elements for the New York subway system are something every designer 
 The catalyst for the campaign was the popularity of a site created to archive the manual with photos of each page: [thestandardsmanual.com](http://thestandardsmanual.com/)
 
 [Check out the Kickstarter campaign here](https://www.kickstarter.com/projects/thestandardsmanual/full-size-reissue-of-the-nycta-graphics-standards).
-

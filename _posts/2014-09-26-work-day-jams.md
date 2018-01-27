@@ -4,8 +4,9 @@ title:  Work Day Jams
 date:   2014-09-26
 categories:
 feature: spacer.gif
+visible: nope
 ---
-If you’re reading this, there’s a decent chance you have a job similar to mine—meaning you interact with a computer all day, possibly in a creative industry. Many of us listen to audio (music, sounds, talk radio, etc.) while we hammer away at our tasks. There are a number of reasons for this—to drown out background noise, to motivate, to inspire, to help focus, to make the office feel less lonely. 
+If you’re reading this, there’s a decent chance you have a job similar to mine—meaning you interact with a computer all day, possibly in a creative industry. Many of us listen to audio (music, sounds, talk radio, etc.) while we hammer away at our tasks. There are a number of reasons for this—to drown out background noise, to motivate, to inspire, to help focus, to make the office feel less lonely.
 
 I’m a designer, so keep in mind that I’m not working in spreadsheets or granular data for extended periods of time. And, while this may not work for you, here’s what I listen to when designing:
 
@@ -17,7 +18,7 @@ _Examples include Tycho, the Braid soundtrack, John Coltrane._
 
 _Examples include Gloryhammer, Finntroll, Northland, Tyr._
 
-**Anything Really Familiar**—If it’s so familiar that I know the words inside-and-out then I follow the principled above by cutting down on distraction—the lyrics simply fade into the background. Plus, nostalgia adds some good vibes. 
+**Anything Really Familiar**—If it’s so familiar that I know the words inside-and-out then I follow the principled above by cutting down on distraction—the lyrics simply fade into the background. Plus, nostalgia adds some good vibes.
 
 _Examples (for me) include Smashing Pumpkins, any punk/ska/emo from the late 90s-early 2000s, old school hip-hop._
 

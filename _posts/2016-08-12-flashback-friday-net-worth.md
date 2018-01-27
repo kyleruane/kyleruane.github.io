@@ -2,8 +2,9 @@
 layout: post
 title:  Flashback Friday&#58; Net Worth
 date:   2016-08-12
-categories: 
+categories:
 feature: blog/spacer.gif
+visible: nope
 ---
 
 ![Net Worth Coffee Brokers Store Design]({{site.project_img_path}}flashback/net_worth_main.jpg)

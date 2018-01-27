@@ -4,6 +4,7 @@ title:  Chesscademy
 date:   2014-09-08
 categories:
 feature: spacer.gif
+visible: nope
 ---
 I enjoy the game of chess. It allows me to maintain some shred of competitive edge when playing against an opponent, but also forces me continuously improve. I appreciate it more as I get older, as I do with a lot of other slower-paced, more cerebral endeavors. But, being a merely a casual player (at best), where do I turn to hone my skills and begin to learn the plethora of techniques and strategies involved?
 

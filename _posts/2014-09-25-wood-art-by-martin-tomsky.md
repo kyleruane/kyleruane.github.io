@@ -4,8 +4,9 @@ title:  Wood Art by Martin Tomsky
 date:   2014-09-25
 categories:
 feature: spacer.gif
+visible: nope
 ---
-Martin Tomsky creates amazing layered wood pieces, stacking many separate lazer-cut elements into intricate compositions. The depth created by the overlapping of pieces as well as the great tones of the wood is remarkable. The style that is created is reminiscent of stage sets seen in early cinema, which lends itself nicely to the narratives each piece’s subject matter seem to reference. 
+Martin Tomsky creates amazing layered wood pieces, stacking many separate lazer-cut elements into intricate compositions. The depth created by the overlapping of pieces as well as the great tones of the wood is remarkable. The style that is created is reminiscent of stage sets seen in early cinema, which lends itself nicely to the narratives each piece’s subject matter seem to reference.
 
 <br>![Image]({{site.blog_img_path}}2014/seaserpent.jpg)
 

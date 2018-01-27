@@ -4,8 +4,9 @@ title:  Podcasts I Frequent
 date:   2014-10-21
 categories:
 feature: spacer.gif
+visible: nope
 ---
-Taking a cue from friend and fellow [coalworker](http://coalwork.com/) [Joe Casabona](http://casabona.org/2014/10/podcasts-listen-every-week/), I decided to list the various podcasts I listen to, have listened to and plan on listening to. Perhaps you’ll find something interesting here worth a listen or two. 
+Taking a cue from friend and fellow [coalworker](http://coalwork.com/) [Joe Casabona](http://casabona.org/2014/10/podcasts-listen-every-week/), I decided to list the various podcasts I listen to, have listened to and plan on listening to. Perhaps you’ll find something interesting here worth a listen or two.
 
 Some context—I usually listen to podcasts when traveling, which is infrequent (need music when working, more on that [here](http://kyleruane.com/blog/10001/work-day-jams)). So, I meander in and out of different shows and am not a hardcore, can’t-miss-an-episode fan of anything.  
 

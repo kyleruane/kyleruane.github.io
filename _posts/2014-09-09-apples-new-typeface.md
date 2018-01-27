@@ -4,10 +4,11 @@ title:  Apple's New Typeface
 date:   2014-09-09
 categories:
 feature: spacer.gif
+visible: nope
 ---
-The announcement of the new [iPhone 6/+](http://www.apple.com/iphone/) and the [Apple Watch](http://www.apple.com/watch/) earlier today gave every individual connected to internet something to either drool over or lament. In a fairly significant shift from my normal fanboy post-announcement glow, I remain neutral with my opinions on these new products. Don’t get me wrong—they look amazing. But, I’m going to get the new iPhone because I simply need a new phone. They could have rattled off nearly any feature (or not) and I’d have been satisfied. As long as it takes a charge it has my current one beat. Aside from that, I’m just not on board the “smart” watch trend. Once again, the watch looks great and I could be wrong here, but I really don’t think wearables will ever interest me. 
+The announcement of the new [iPhone 6/+](http://www.apple.com/iphone/) and the [Apple Watch](http://www.apple.com/watch/) earlier today gave every individual connected to internet something to either drool over or lament. In a fairly significant shift from my normal fanboy post-announcement glow, I remain neutral with my opinions on these new products. Don’t get me wrong—they look amazing. But, I’m going to get the new iPhone because I simply need a new phone. They could have rattled off nearly any feature (or not) and I’d have been satisfied. As long as it takes a charge it has my current one beat. Aside from that, I’m just not on board the “smart” watch trend. Once again, the watch looks great and I could be wrong here, but I really don’t think wearables will ever interest me.
 
-What did pique my interest during the announcement was the departure from the typical Apple typefaces for the Apple Watch logo and materials. Apple has used Myriad for marketing materials since the early 2000s and slapped Helvetica all over every version of iOS, but when the watch was announced today, a new sans-serif accompanied it. 
+What did pique my interest during the announcement was the departure from the typical Apple typefaces for the Apple Watch logo and materials. Apple has used Myriad for marketing materials since the early 2000s and slapped Helvetica all over every version of iOS, but when the watch was announced today, a new sans-serif accompanied it.
 
 <br>![Apple Watch]({{site.blog_img_path}}2014/watch.jpg)
 

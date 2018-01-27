@@ -4,6 +4,7 @@ title:  Bucket List
 date:   2016-06-16
 categories:
 feature: spacer.gif
+visible: nope
 ---
 Some things I want to work on someday. Have a lead on anything below? Let’s make it happen.
 
