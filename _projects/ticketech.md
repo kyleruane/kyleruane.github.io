@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Ticketech <i>In Progress</i>
+title: Ticketech
 description: |
  <p>Design for a web application that manages parking lot locations. Owners and managers can monitor relevant data, per location and a given period of time.</p>
  <time>c. 2016</time>
@@ -12,8 +12,8 @@ category: study
 size: half
 ---
 
-![]({{site.project_img_path}}ticketech/dash1.jpg)
+![]({{site.project_img_path}}ticketech/tt_app_1.jpg)
 
-![]({{site.project_img_path}}ticketech/dash2.jpg)
+![]({{site.project_img_path}}ticketech/tt_app_2.jpg)
 
-![]({{site.project_img_path}}ticketech/modules.jpg)
+![]({{site.project_img_path}}ticketech/tt_app_3.jpg)
