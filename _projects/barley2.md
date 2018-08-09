@@ -2,7 +2,7 @@
 layout: project
 title: Barley v2
 description: |
- <p>Version 2 of our website management platform, killed before launch. RIP.</p>
+ <p>Version 2 of the website management platform, killed before launch. RIP.</p>
 
 feature: b2/hero.jpg
 backdrop: b2/b2_bg.jpg

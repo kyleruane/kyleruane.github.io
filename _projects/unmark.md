@@ -2,12 +2,9 @@
 layout: project
 title: Unmark
 description: |
- <p>Unmark is a bookmarking system we built at <a href="http://plainmade.com">Plain</a> to help people turn the things they save from the web into actionable items. We call it the to-do list for bookmarks. It's a progressive web app that works across all devices.</p>
- <p>Project roles included UX considerations such as wireframes and user flow charts, feature planning and spec documents, interface design, icon design, branding, website design and development.</p> 
+ <p>Unmark is a bookmarking system we built at Plain to help people turn the things they save from the web into actionable items. We call it the to-do list for bookmarks. It's a progressive web app that works across all devices.</p>
+ <p>Project roles included UX considerations such as wireframes and user flow charts, feature planning and spec documents, interface design, icon design, branding, website design and development.</p>
  <time>c. 2014</time>
- <ul>
- 	<li><a href="http://unmark.it/">View website</a></li>
- </ul>
 
 feature: unmark/um_ipad.jpg
 backdrop: unmark/um_ipad.jpg

@@ -6,7 +6,6 @@ description: |
  <p>Deliverables included logo system, branding guidelines, business cards, document templates, and a custom website.</p>
  <time>c. 2015</time>
  <ul>
- 	<li><a href="http://classcraftav.com/">View live site</a></li>
  	<li><a href="https://dribbble.com/kyleruane/projects/314638-ClassCraft">View project on Dribbble</a></li>
  </ul>
 
