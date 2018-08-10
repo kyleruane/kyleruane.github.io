@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Metro Representative App
+title: Metro Sales App
 description: |
  <p>Design for an app that allows sales representatives to access a library of information about their product line at any time—images, manuals, warranties, competitors, etc.</p>
  <time>c. 2017</time>
