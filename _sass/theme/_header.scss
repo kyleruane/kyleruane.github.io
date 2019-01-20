@@ -1,128 +1,235 @@
 .site-header {
-	height: 60px;
-	position: absolute;
-	width: 100%;
 	background: none;
 	border-radius: 0;
-	z-index: 10;
-	@include sm {
-		width: 420px;
-		@include rotate(90deg);
-		position: absolute;
-		top: 0;
-		left: 100%;
-		margin-left: -20px;
-		transform-origin: left top 0;
-	}
+	position: relative;
+	margin-bottom: 40px;
 	@include md {
-		margin-left: -26px;
-	}
-	&.single {
-		height: $header-height - 100px;
+		margin-bottom: 30px;
 	}
 	.logo {
-		position: absolute;
-		top: 20px;
-		left: 20px;
-		background-image: url(../images/logo_super_thin.svg);
-		background-size: 20px auto;
+		display: block;
+		height: 20px;
+		width: 20px;
+		background-image: url(../images/logo.svg);
+		background-size: 100% auto;
 		background-position: center center;
 		background-repeat: no-repeat;
-		opacity: .7;
+		flex-grow: 0;
+		flex-shrink: 0;
 		@include sm {
-			top: 14px;
-			left: 30px;
-			@include rotate(270deg);
-		}
-		@include md {
-			left: 40px;
+			height: 28px;
+			width: 28px;
+			background-size: 15px auto;
+			border: 2px solid black;
+			margin-top: -3px;
 		}
 	}
-	.main-nav {
-	    position: absolute;
-	    top: 18px;
-	    @include sm {
-	    	left: 78px;
-	    }
-	    @include md {
-	    	left: 96px;
-	    }
-		> ul {
-			@extend .nav;
-			@extend .navbar-nav;
-			float: none;
-			@include xs {
-				display: none;
+	.header-wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		//box-shadow: 0 1px 0 0 transparentize(black, .94), 0 -1px 0 0 transparentize(black, .94);
+		border-top: 1px solid #e8e8e8;
+		border-bottom: 1px solid #e8e8e8;
+		margin-top: 20px;
+		padding: 18px 0 20px;
+		@include sm {
+    	padding: 18px 0 36px;
+			margin-top: 22px;
+    }
+    @include md {
+    	padding: 24px 0 40px;
+			margin-top: 26px;
+    }
+		@include lg {
+    	padding: 30px 0 50px;
+			margin-top: 34px;
+    }
+	}
+	.branding {
+		flex-basis: 25%;
+		flex-shrink: 0;
+		flex-grow: 0;
+		h1 {
+			font-size: 16px;
+			margin-top: 0;
+			font-weight: 700;
+			line-height: .875;
+			text-transform: none;
+			letter-spacing: normal;
+			@include sm {
+				font-size: 16px;
 			}
-			> li {
-				@include heading;
-				font-size: 10px;
-				letter-spacing: 1.75px;
-				float: left;
-				&.active {
-					position: relative;
-					&:after {
-						content: " ";
-				    width: 30px;
-				    height: 1px;
-				    background: #ccc;
-				    position: absolute;
-				    top: 50%;
-				    margin-top: -1px;
-				    left: 50%;
-				    margin-left: -15px;
-						@include rotate(-45deg);
+			@include md {
+				font-size: 20px;
+			}
+			@include lg {
+				font-size: 22px;
+			}
+		}
+		.social {
+			ul {
+				list-style: none;
+				display: flex;
+				padding: 0;
+				margin: 24px 0 0;
+				@include sm {
+					margin: 18px 0 0;
+				}
+				@include md {
+					margin: 24px 0 0;
+				}
+				li {
+					height: 16px;
+					width: 16px;
+					margin-right: 8px;
+					@include sm {
+						height: 14px;
+						width: 14px;
+						margin-right: 6px;
 					}
-					> a {
-						color: #ccc;
-						&:hover, &:focus, &:active {
-							color: #ccc;
+					@include md {
+						height: 16px;
+						width: 16px;
+						margin-right: 8px;
+					}
+					a {
+						display: block;
+						height: 16px;
+						width: 16px;
+						color: #777;
+						transition: all .4s;
+						@include sm {
+							height: 14px;
+							width: 14px;
+						}
+						@include md {
+							height: 16px;
+							width: 16px;
+						}
+						@include sm {
+							color: #aaa;
+							&:hover {
+								color: #777;
+							}
+						}
+						i {
+							display: block;
 						}
 					}
 				}
-				> a {
-					color: $text-color;
-					padding: 0 18px;
-					line-height: 16px;
-					&:hover, &:focus, &:active {
-						color: $text-color;
-						background: none;
-						text-decoration: none;
-					}
-				}
 			}
 		}
 	}
-	&.bar {
-		@include sm {
-			height: 100px;
-			box-shadow: 0 1px 0 0 transparentize(black, .94);
-			top: 0;
-			left: 0;
-			margin-left: 0;
-			width: 100%;
-			@include rotate(0deg);
-		}
-		.logo {
+	.main-nav {
+		flex-basis: 75%;
+		flex-shrink: 0;
+		flex-grow: 0;
+		> ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
 			@include sm {
-				left: 38px;
-				right: auto;
-				top: 38px;
-				@include rotate(0deg);
+				width: calc(100% + 24px);
+				margin-left: -12px;
+			}
+			@include md {
+				width: calc(100% + 30px);
+				margin-left: -15px;
+			}
+			@include lg {
+				width: calc(100% + 40px);
+				margin-left: -20px;
 			}
 			@include xl {
-				left: 42px;
+				width: calc(100% + 60px);
+				margin-left: -30px;
 			}
-		}
-		.main-nav {
-			position: static;
-			padding: 42px 18px;
-			@include xl {
-				padding: 42px 24px;
-			}
-			> ul {
+			> li {
 				@include sm {
-					float: right;
+					width: 33.333333%;
+					padding: 0 12px;
+					margin-bottom: 18px;
+				}
+				@include md {
+					padding: 0 15px;
+					margin-bottom: 22px;
+				}
+				@include lg {
+					padding: 0 20px;
+					margin-bottom: 26px;
+				}
+				@include xl {
+					padding: 0 30px;
+				}
+				> a {
+					padding: 0;
+				}
+				h5 {
+					@include heading;
+					font-size: 14px;
+					margin-top: 0;
+					font-weight: 700;
+					text-transform: none;
+					letter-spacing: normal;
+					@include sm {
+						font-size: 12px;
+						margin-bottom: 5px;
+					}
+					@include md {
+						font-size: 14px;
+						margin-bottom: 8px;
+					}
+					span {
+						display: inline-block;
+						position: relative;
+					}
+				}
+				p {
+					font-family: $font-copy;
+					text-transform: none;
+					letter-spacing: normal;
+					font-size: 11px;
+					margin-bottom: 0;
+					font-weight: 300;
+					color: $text-light;
+					line-height: 1.4;
+					display: none;
+					@include sm {
+						font-size: 10px;
+						display: block;
+					}
+					@include md {
+						font-size: 11px;
+					}
+				}
+				&.active {
+					&:before {
+						display: none;
+					}
+					&:after {
+						display: none;
+					}
+					h5 {
+						span {
+							&:after {
+								content: "";
+								display: block;
+								height: 1px;
+								width: 24px;
+								background: $text-light;
+								position: absolute;
+								top: 50%;
+								margin-top: 0px;
+								left: calc(100% - 8px);
+								opacity: .3;
+							}
+						}
+					}
 				}
 			}
 		}

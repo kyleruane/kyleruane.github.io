@@ -1,81 +1,25 @@
 .intro {
-	padding: 140px 20px 80px;
-	min-height: 400px;
-	@include clearfix();
+	padding: 0;
 	position: relative;
 	overflow: hidden;
+	border-bottom: 1px solid #e8e8e8;
 	@include sm {
-		padding: 40px 48px 80px;
-		min-height: 100vh;
-		//background-image: url(../images/trees_light.jpg);
-		@include background;
 	}
 	@include md {
-		padding: 50px 68px 100px;
+		padding: 160px 25%;
 	}
 	@include xxl {
-		min-height: calc(100vh - 40px);
-	}
-	.line {
-		// diagonal
-		/*
-		@include md {
-			height: 200%;
-			width: 1px;
-			background: transparentize($text-light, .88);
-			position: absolute;
-			top: -30%;
-			left: 0%;
-			@include rotate(-135deg);
-		}
-		*/
-		@include sm {
-			height: 500px;
-			width: 1px;
-			background: transparentize(black, .35);
-			position: absolute;
-			top: 0;
-			right: 92px;
-			opacity: .14;
-			&:before {
-				content: " ";
-				display: block;
-				width: 18px;
-				height: 1px;
-				background: black;
-				position: absolute;
-				bottom: 4px;
-				right: -3px;
-				@include rotate(45deg);
-			}
-			&:after {
-				content: " ";
-				display: block;
-				width: 18px;
-				height: 1px;
-				background: black;
-				position: absolute;
-				bottom: 4px;
-				right: -14px;
-				@include rotate(-45deg);
-			}
-		}
-		@include md {
-			right: 104px;
-		}
 	}
 	.text {
 		font-size: 14px;
 		@include sm {
-			padding-left: 20px;
-			float: left;
-			width: 66.666666%
+			//width: 66.666666%;
 		}
 		@include md {
-			width: 50%;
+			//width: 50%;
 		}
 		@include md {
-			font-size: 16px;
+			font-size: 15px;
 		}
 	}
 	h2 {
@@ -88,7 +32,7 @@
 	}
 	h3 {
 		font-size: 24px;
-		font-weight: 900;
+		font-weight: 700;
 		margin: 0 0 24px;
 		text-shadow: 0 0 10px transparentize(white, .50);
 		font-family: $font-copy;
@@ -107,11 +51,16 @@
 		}
 	}
 	h5 {
-		font-weight: 500;
+		font-weight: 700;
 		font-size: 14px;
 		margin-top: 30px;
 		color: lighten($text-light, 10%);
-		letter-spacing: 1.5px;
+		@include sm {
+			font-size: 15px;
+		}
+		@include md {
+			font-size: 16px;
+		}
 		i, em {
 			font-weight: 500;
 			font-size: 17px;
@@ -122,6 +71,33 @@
 			letter-spacing: normal;
 			@include sm {
 				font-size: 19px;
+			}
+		}
+		a {
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				width: 1px;
+				height: 30px;
+				background: #ddd;
+				position: absolute;
+				top: 100%;
+				margin-top: 12px;
+				left: 8px;
+			}
+			&:after {
+				content: "";
+				display: block;
+				width: 9px;
+				height: 9px;
+				border: solid #ccc;
+				border-width: 0 1px 1px 0;
+				@include rotate(45deg);
+				position: absolute;
+				top: 100%;
+				margin-top: 33px;
+				left: 4px;
 			}
 		}
 	}
@@ -142,12 +118,12 @@
 		a {
 			color: #222;
 			border-bottom: $border-style;
-			font-weight: 500;
+			font-weight: 600;
 		}
 	}
 	&.hireme {
 		@include sm {
-			background-image: url(../images/axe.jpg);
+			//background-image: url(../images/axe.jpg);
 		}
 	}
 }

@@ -1,13 +1,20 @@
 .site-footer {
-	//border-top: @border-style;
+	box-shadow: 0 -1px 0 0 #e8e8e8;
 	padding: 16px 0;
+	margin-top: 40px;
+	@include sm {
+		margin-top: 60px;
+	}
+	@include md {
+		margin-top: 80px;
+	}
 	.container {
 		@include sm {
-			padding: 0 36px;
+			padding: 0;
 		}
 		@include md {
-			padding: 20px 0;
-			padding: 0 48px;
+			//padding: 20px 0;
+			//padding: 0;
 		}
 	}
 	.copyright {
@@ -15,10 +22,10 @@
 		font-size: 11px;
 		font-weight: 300;
 		color: lighten($text-color, 30%);
-		padding-top: 18px;
+		padding-top: 8px;
 		text-align: center;
 		@include sm {
-			font-size: 13px;
+			font-size: 12px;
 			text-align: right;
 		}
 		p {
@@ -44,7 +51,7 @@
 				}
 				> a {
 					line-height: 1.2;
-					padding: 10px 14px;
+					padding: 0 10px;
 					&:hover {
 						background: none;
 					}
@@ -57,6 +64,6 @@
 					}
 				}
 			}
-		}	
+		}
 	}
 }

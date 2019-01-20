@@ -1,16 +1,45 @@
 .blog {
-	padding: 80px 0 120px;
+	padding: 30px 0 120px;
 	@include sm {
-		padding-top: 160px;
+		padding-top: 0;
 	}
-	.content {
-		max-width: 768px;
-		margin: 0 auto;
+	> .container {
+		padding: 0;
 		@include sm {
-			padding-right: 80px;
+			display: flex;
+			flex-direction: row;
+		}
+	}
+	header {
+		flex-basis: 25%;
+		@include sm {
+			padding-right: 24px;
 		}
 		@include md {
-			padding-right: 0;
+			padding-right: 30px;
+		}
+		@include lg {
+			padding-right: 40px;
+		}
+		@include xl {
+			padding-right: 50px;
+		}
+	}
+	.content {
+		flex-basis: 75%;
+		margin: 0 auto;
+		margin-top: -20px;
+		@include sm {
+			margin-top: -18px;
+		}
+		@include md {
+			margin-top: -30px;
+		}
+		@include lg {
+			margin-top: -30px;
+		}
+		.line {
+			margin: 0;
 		}
 	}
 	.article {
@@ -19,30 +48,41 @@
 		border-bottom: $border-style;
 		display: block;
 		@include sm {
-			padding: 40px 20px;
+			padding: 20px 0;
+		}
+		@include md {
+			padding: 40px 0;
 		}
 		h3 {
 			font-size: 11px;
-			line-height: 1.4;
+			line-height: 1.25;
 			margin: 0;
-			font-weight: 500;
+			font-weight: 700;
 			word-spacing: 3px;
 			@include sm {
-				font-size: 13px;
-				padding-right: 180px;
+				font-size: 16px;
+				padding-right: calc(33.333333% + 40px);
+			}
+			@include md {
+				font-size: 22px;
 			}
 		}
 		.meta {
-			margin-top: 6px;
+			margin-top: 3px;
 			color: transparentize($text-light, .15);
 			font-size: 11px;
 			@include md {
+				width: 33.333333%;
 				position: absolute;
-				font-size: 13px;
-				right: 20px;
-				top: 36px;
-				text-align: right;
+				font-size: 12px;
+				right: 0;
+				top: 42px;
+				//text-align: right;
 				margin: 0;
+				padding-left: 30px;
+			}
+			@include lg {
+				padding-left: 40px;
 			}
 		}
 	}
@@ -138,11 +178,24 @@
 		color: $text-color;
 	}
 	.blog-title {
-		font-size: 24px;
-		font-weight: 900;
-		margin: 30px 0 20px;
+		font-size: 12px;
+		font-weight: 700;
+		margin: 0 0 20px;
 		@include sm {
+			font-size: 18px;
+			//display: none;
+		}
+		@include md {
+			font-size: 20px;
+		}
+		@include lg {
+			font-size: 22px;
+		}
+		span {
 			display: none;
+			@include sm {
+				display: inline;
+			}
 		}
 	}
 }
@@ -155,30 +208,38 @@
 	}
 }
 .post {
+	> .container {
+		padding: 0;
+		@include md {
+			padding-left: 25%;
+		}
+	}
 	.feature {
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 		@include sm {
-			margin-bottom: 80px;
-			margin-top: 80px;
+			margin-bottom: 24px;
 		}
 		@include md {
-			margin-bottom: 90px;
+			margin-bottom: 34px;
 		}
 		&.nope {
-			margin-bottom: 0;
+			margin: 0;
 			@include sm {
-				margin-bottom: 0;
+				margin: 0;
 			}
 			@include md {
-				margin-bottom: 0;
+				margin: 0;
 			}
 		}
 	}
 	article {
-		max-width: 666px;
-		margin: 0 auto 100px;
+		//max-width: 666px;
+		//margin: 0 auto 100px;
 		@include sm {
 			margin-bottom: 200px
+		}
+		@include md {
+			max-width: 64%;
 		}
 		header {
 			margin-bottom: 40px;
@@ -186,11 +247,14 @@
 				margin-bottom: 68px;
 			}
 			h2 {
-				font-weight: 500;
+				font-weight: 700;
 				font-size: 16px;
 				margin-top: 0;
 				@include sm {
-					font-size: 18px;
+					font-size: 40px;
+				}
+				@include md {
+					font-size: 48px;
 				}
 			}
 		}
@@ -204,13 +268,13 @@
 			}
 		}
 		h2,h3,h4 {
-			margin: 40px 0 36px;
-			font-weight: 500;
+			margin: 0 0 36px;
+			font-weight: 700;
 		}
 		h2 {
 			font-size: 16px;
 			@include sm {
-				font-size: 18px;
+				font-size: 24px;
 			}
 		}
 		h3 {
@@ -220,14 +284,19 @@
 			}
 		}
 		h4 {
-			font-size: 11px;
 			@include sm {
-				font-size: 13px;
+				font-size: 15px;
+			}
+			@include md {
+				font-size: 18px;
+			}
+			@include lg {
+				font-size: 22px;
 			}
 		}
 		a {
 			color: #111;
-			font-weight: 400;
+			font-weight: 600;
 			border-bottom: $border-style;
 		}
 		ul, ol {
@@ -302,7 +371,7 @@
 				font-size: 16px;
 			}
 			@include md {
-				float: right;
+				//float: right;
 			}
 			@include md {
 				max-width: 100%;
@@ -317,9 +386,12 @@
 				}
 			}
 			p {
-				font-size: 15px;
+				font-size: 12px;
 				@include sm {
-					font-size: 16px;
+					font-size: 13px;
+				}
+				@include md {
+					font-size: 14px;
 				}
 			}
 			* {
@@ -334,7 +406,13 @@
 			margin: 0 auto;
 			@include md {
 				max-width: 100%;
-				padding-right: 30px;
+				padding-left: 30px;
+			}
+			@include lg {
+				padding-left: 40px;
+			}
+			@include xl {
+				padding-left: 50px;
 			}
 			.sidebar {
 				@include make-sm-column(6);
@@ -346,8 +424,8 @@
 				}
 			}
 			h2,h3,h4 {
-				margin: 40px 0 28px;
-				font-weight: 500;
+				margin: 0 0 28px;
+				font-weight: 700;
 			}
 			h2 {
 				font-size: 20px;
@@ -370,7 +448,10 @@
 			h4 {
 				font-size: 14px;
 				@include sm {
-					font-size: 14px;
+					font-size: 13px;
+				}
+				@include md {
+					font-size: 15px;
 				}
 				&:first-child {
 					margin-top: 0;
@@ -378,7 +459,7 @@
 			}
 			a {
 				color: #111;
-				font-weight: 400;
+				font-weight: 600;
 				border-bottom: $border-style;
 			}
 			ul, ol {

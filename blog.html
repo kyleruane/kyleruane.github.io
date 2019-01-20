@@ -2,32 +2,22 @@
 layout: default
 ---
 
-<nav class="blog-nav"></nav>
-    
 <main class="blog">
     <div class="container">
-        <div class="content">
+      <header>
+        <h2 class="blog-title"><span>Blog </span>Posts</h2>
+      </header>
+      <div class="content">
 
-            <h2 class="blog-title">Blog</h2>
+          {% for post in site.posts %}
+          <a class="article" href="{{ post.url | prepend: site.baseurl }}">
+              <h3>{{ post.title }}</h3>
+              <div class="meta">
+                  <span class="date">{{ post.date | date: '%B %-d, %Y' }}</span>
+              </div>
+          </a>
+          {% endfor %}
 
-            {% for post in site.posts %}
-            <a class="article" href="{{ post.url | prepend: site.baseurl }}">
-                <h3>{{ post.title }}</h3>
-                <div class="meta">
-                    <span class="date">{{ post.date | date: '%B %-d, %Y' }}</span>
-                </div>
-            </a>
-            {% endfor %}
-
-            <!--
-            <section class="pagination">
-                <nav>
-                    <a href="#">Newer Posts</a>
-                    <a href="#">Older Posts</a>
-                </nav>
-            </section>
-            -->
-        </div>
-        
+      </div>
     </div>
 </main>

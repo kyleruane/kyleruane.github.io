@@ -1,25 +1,32 @@
 .outro {
 	padding: 100px 20px 50px;
-	@include clearfix();
-	@include sm { 
-		padding: 160px 48px 100px;
+	display: flex;
+	@include sm {
+		padding: 100px 25%;
 	}
-	@include md { 
-		padding: 200px 68px;
+	@include md {
+		padding: 140px 25%;
+	}
+	@include lg {
+		padding: 160px 25%;
 	}
 	.text {
-		font-size: 14px;
+		font-size: 13px;
 		@include sm {
-			width: 66.666666%;
+			//width: 66.666666%;
+			flex-basis: 100%;
 			float: right;
-			padding-top: 6px;
+			font-size: 14px;
 		}
 		@include md {
 			width: 50%;
-			font-size: 16px;
+			font-size: 15px;
 		}
 		p {
-			font-size: inherit; 
+			font-size: inherit;
+		}
+		h2 {
+			margin-bottom: 20px;
 		}
 	}
 	.headline {
@@ -47,7 +54,7 @@
 			font-size: 16px;
 		}
 		p {
-			font-size: inherit; 
+			font-size: inherit;
 		}
 		h2 {
 			margin-top: 0;
@@ -58,22 +65,25 @@
 			position: relative;
 			margin-bottom: 24px;
 			@include sm {
-				padding: 0 20px;
-				font-size: 30px;
+				padding-right: 16px;
+				font-size: 36px;
 			}
 		}
 	}
 	h4 {
-		font-size: 16px;
+		font-size: 13px;
 		font-weight: 500;
-		margin: 0 0 32px; 
+		margin: 0 0 32px;
 		@include sm {
-			font-size: 18px;
+			font-size: 14px;
+		}
+		@include sm {
+			font-size: 16px;
 		}
 	}
 	a {
-		font-size: 18px;
-		font-weight: 600;
+		//font-size: 18px;
+		font-weight: 700;
 	}
 }
 .solutions {
@@ -83,16 +93,16 @@
 	}
 	figure {
 		border-bottom: $border-style;
-		padding: 60px 20px 40px;
+		padding: 60px 0 40px;
 		@include clearfix();
 		@include sm {
-			padding: 80px 60px;
+			padding: 80px 0;
 		}
 		@include lg {
-			padding: 140px 88px;
+			padding: 140px 0;
 		}
 		&:nth-child(even) {
-			background: transparentize($gray-bg, .4);
+			//background: transparentize($gray-bg, .4);
 		}
 		&:first-child {
 			@include xs {
@@ -111,13 +121,13 @@
 			}
 			h6 {
 				font-size: 12px;
-				font-weight: 400;
+				font-weight: 700;
 				margin: 10px 0 12px;
 				font-family: $font-nav;
-				text-transform: uppercase;
-				color: transparentize($text-light, .15);
+				//text-transform: uppercase;
+				//color: transparentize($text-light, .1);
 				@include sm {
-					font-size: 14px;
+					font-size: 15px;
 					margin: 10px 0 24px;
 				}
 			}

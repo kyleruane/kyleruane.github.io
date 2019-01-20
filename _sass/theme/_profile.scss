@@ -1,0 +1,150 @@
+.profile {
+	/*
+	padding: 20px 0 0;
+	box-shadow: 0 1px  0 0 transparentize(black, .94) inset;
+	@include sm {
+		padding-top: 18px;
+	}
+	@include md {
+		padding-top: 20px;
+	}
+	@include lg {
+		padding-top: 24px;
+	}
+	*/
+	> .container {
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 0;
+		@include sm {
+			flex-direction: row;
+		}
+	}
+	.sidebar {
+		flex-basis: 100%;
+		@include sm {
+			flex-basis: 25%;
+		}
+		.title {
+			font-size: 12px;
+			font-weight: 700;
+			margin: 0 0 20px;
+			@include sm {
+				font-size: 18px;
+			}
+			@include md {
+				font-size: 20px;
+			}
+			@include lg {
+				font-size: 22px;
+			}
+		}
+	}
+	.row {
+		display: flex;
+		flex-direction: column;
+		@include md {
+			flex-direction: row;
+			width: calc(100% + 30px);
+			margin-left: -15px;
+		}
+		@include lg {
+			width: calc(100% + 40px);
+			margin-left: -20px;
+		}
+		@include xl {
+			width: calc(100% + 60px);
+			margin-left: -30px;
+		}
+	}
+	.text {
+		flex-basis: 100%;
+		max-width: 666px;
+		margin: 0 auto;
+		padding: 0;
+		@include sm {
+			max-width: none;
+			flex-basis: 75%;
+			margin: 0;
+		}
+		article {
+			float: none;
+			width: auto;
+			flex-basis: 100%;
+			max-width: none;
+			@include md {
+				flex-basis: 66.666666%;
+				width: calc(100% + 30px);
+				padding: 0 15px;
+			}
+			@include lg {
+				width: calc(100% + 40px);
+				padding: 0 20px;
+			}
+			@include xl {
+				width: calc(100% + 60px);
+				padding: 0 30px;
+			}
+		}
+		aside {
+			float: none;
+			width: auto;
+			flex-basis: 100%;
+			max-width: none;
+			margin: 0;
+			@include md {
+				flex-basis: 33.333333%;
+				width: calc(100% + 30px);
+				padding: 0 15px;
+			}
+			@include lg {
+				width: calc(100% + 40px);
+				padding: 0 20px;
+			}
+			@include xl {
+				width: calc(100% + 60px);
+				padding: 0 30px;
+			}
+			@include xxl {
+				padding: 0 30px;
+			}
+			.row {
+				flex-direction: column;
+				@include sm {
+					flex-direction: row;
+				}
+				@include md {
+					flex-direction: column;
+				}
+			}
+			section {
+				flex-basis: 100%;
+				margin-bottom: 20px;
+				@include sm {
+					flex-basis: 50%;
+					padding: 0 12px;
+				}
+				@include md {
+					flex-basis: 100%;
+					padding: 0 15px;
+					margin-bottom: 30px;
+				}
+				@include lg {
+					padding: 0 20px;
+				}
+				@include xl {
+					padding: 0 25px;
+				}
+				@include xxl {
+					padding: 0 25px;
+				}
+			}
+			ul li {
+				font-size: 13px;
+				@include sm {
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}

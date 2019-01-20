@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
     // Featured Photo
-    $('.work .background').css('background-image', function(){ 
+    $('.work .background').css('background-image', function(){
        return 'url(' + $(this).children('.bg').find('img').attr("src") + ')';
     });
-    $('.work .feature').css('background-image', function(){ 
+    $('.work .feature').css('background-image', function(){
        return 'url(' + $(this).siblings('.thumb').find('img').attr("src") + ')';
     });
-    $('.profile .feature .image').css('background-image', function(){ 
+    $('.profile .feature .image').css('background-image', function(){
        return 'url(' + $(this).parent().find('img').attr("src") + ')';
-    });    
+    });
 
     // Replace SVG images with PNG versions if SVG is not supported
     if(!Modernizr.svg) {
@@ -33,50 +33,16 @@ $(document).ready(function(){
     // Change style for active nav link
     var section = window.location.pathname.split('/'),
         sectionPart = section[1];
-        
+
     if ( typeof sectionPart === "undefined" || sectionPart == '' ) {
         sectionPart = 'projects';
-        $('.main-nav ul li').first().addClass('active');
+        $('.main-nav ul li:first-child').addClass('active');
     }
-    
+
     $('.main-nav ul li a[href*="'+sectionPart+'"]').parent().addClass('active');
 
 
-    // Show/Hide Search Panel
-    $('.search-link').click(function(e) {
-        e.preventDefault();
-        $('.search').fadeIn();
-        $('body').addClass('freeze');
-    });
-    $('.search .search-close').click(function(e) {
-        e.preventDefault();
-        $('.search').fadeOut();
-        $('body').removeClass('freeze');
-    });
 
-    // Work slide-y panel thing
-    $('.panel-links .a-link').click(function(e) {
-        e.preventDefault();
-        $(this).closest('.work').removeClass('a-active b-active c-active')
-        $(this).closest('.work').addClass('a-active');
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-    });
-    $('.panel-links .b-link').click(function(e) {
-        e.preventDefault();
-        $(this).closest('.work').removeClass('a-active b-active c-active')
-        $(this).closest('.work').addClass('b-active');
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-    });
-    $('.panel-links .c-link').click(function(e) {
-        e.preventDefault();
-        $(this).closest('.work').removeClass('a-active b-active c-active')
-        $(this).closest('.work').addClass('c-active');
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-    });
-   
     // The function that sorts items
     /*
     (function($){

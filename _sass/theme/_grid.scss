@@ -2,6 +2,7 @@
 	padding: 0;
 	overflow: hidden;
 	position: relative;
+	/*
 	&:after {
 		content: "Select Projects";
 		display: none;
@@ -25,6 +26,7 @@
 			right: -24px;
 		}
 	}
+	*/
 	@include sm {
 		padding: 0;
 	}
@@ -71,34 +73,40 @@
 	}
 	.grid {
 		//padding: 0 10px;
-		width: 100%;
-	}
-	.grid-sizer {
-		width: 100%;
-		@include sm {
-			width: 50%;
-		}
-		@include md {
-			width: 33.333333%;
-		}
+		//width: calc(100% + 20px);
+		//margin-left: -10px;
+		display: flex;
+		//flex-direction: row;
+		flex-direction: column;
+		//flex-wrap: wrap;
 	}
 	.item {
-		width: 100%;
+		flex-basis: 100%;
+		flex-grow: 0;
+		flex-shrink: 0;
 		//padding: 0 10px;
-		//margin-bottom: 20px;
+		margin-bottom: 20px;
 		display: block;
+
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid #e8e8e8;
+		padding-bottom: 20px;
 		@include sm {
-			//width: 33.333333%;
-			//float: left;
-			//display: inline-block;
+			//padding: 0 10px;
+			//flex-direction: row;
+			padding-bottom: 20px;
+			margin-bottom: 20px;
 		}
 		@include md {
 			//width: 25%;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
 		}
+		/*
 		&.half {
 			@include sm {
-				width: 50%;
-				float: left;
+				flex-basis: 50%;
 				figure {
 					padding-bottom: 100%;
 				}
@@ -113,6 +121,9 @@
 			}
 			@include md {
 				//width: 33.333333%;
+			}
+			.overlay {
+				width: 50%;
 			}
 		}
 		&.wide {
@@ -136,6 +147,125 @@
 				}
 			}
 		}
+		*/
+		.details {
+			//flex-basis: 100%;
+			flex-shrink: 0;
+			display: flex;
+			flex-direction: row;
+			padding-top: 14px;
+			@include sm {
+				padding-top: 20px;
+			}
+			@include md {
+				padding-top: 30px;
+			}
+			.title {
+				@include sm {
+					flex-basis: 25%;
+					flex-shrink: 0;
+					padding-right: 40px;
+				}
+				h5 {
+					//padding: 20px 30px 22px;
+					font-family: $font-title;
+					font-size: 13px;
+					font-weight: 700;
+					line-height: 1.35;
+					margin: 0;
+					width: 100%;
+					color: #111;
+					@include sm {
+						font-size: 17px;
+					}
+					@include md {
+						font-size: 22px;
+					}
+				}
+			}
+			figcaption {
+				display: none;
+				@include sm {
+					flex-basis: 75%;
+					flex-shrink: 0;
+					display: flex;
+					flex-direction: row;
+
+				}
+				.text {
+					@include sm {
+						flex-basis: 66.666666%;
+						flex-shrink: 0;
+						padding-right: 20px;
+					}
+					p {
+						font-size: 12px;
+						line-height: 1.5;
+						@include md {
+							font-size: 13px;
+						}
+					}
+				}
+				.actions {
+					@include sm {
+						flex-basis: 33.333333%;
+						flex-shrink: 0;
+						padding-left: 40px;
+					}
+					button {
+						display: block;
+						background: none;
+						border: none;
+						box-shadow: none;
+						outline: none;
+						font-weight: 700;
+						width: 100%;
+						padding: 0 34px 0 0;
+						position: relative;
+						font-size: 13px;
+						text-align: left;
+						margin-top: -2px;
+						@include md {
+							font-size: 14px;
+						}
+						span {
+							background: white;
+							padding-right: 12px;
+							position: relative;
+						}
+						&:before {
+							content: "";
+							display: block;
+							width: calc(100% - 10px);
+							height: 1px;
+							background: #ddd;
+							position: absolute;
+							top: 50%;
+							margin-top: -1px;
+							right: 4px;
+						}
+						&:after {
+							content: "";
+							display: block;
+							width: 9px;
+							height: 9px;
+							border: solid #ccc;
+							border-width: 1px 1px 0 0;
+							@include rotate(45deg);
+							position: absolute;
+							top: 50%;
+							margin-top: -5px;
+							right: 4px;
+						}
+					}
+				}
+			}
+		}
+		.image {
+			//flex-basis: 100%;
+			@include sm {
+			}
+		}
 		figure {
 			background-color: $gray-bg;
 			@include background;
@@ -148,35 +278,35 @@
 			}
 		}
 		.overlay {
-			position: absolute;
 			width: 100%;
 			height: 100%;
-			background: transparentize(#111, .2);
-			//border: 1px solid #e2e2e2;
-			padding: 30px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: transparentize(white, .1);
+			padding: 20px;
 			opacity: 0;
 			@include transition(all .6s);
+			display: flex;
+			flex-direction:	column;
+			justify-content: center;
 			h5 {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				padding: 30px 30px 32px;
+				//padding: 20px 30px 22px;
 				font-family: $font-title;
-				font-size: 10px;
-				font-weight: 400;
+				font-size: 13px;
+				font-weight: 700;
 				line-height: 1.35;
-				//max-width: 300px;
-				//text-align: right;
 				margin: 0;
 				width: 100%;
-				color: white;
-				border-top: 1px solid transparentize(white, .84);
+				color: #111;
+				//border-top: 1px solid transparentize(white, .84);
 				&:before {
 					content: "";
 					display: block;
 					width: 10px;
-					height: 1px;
-					background: white;
+					height: 10px;
+					border: solid white;
+					border-width: 1px 1px 0 0;
 					@include rotate(45deg);
 					position: absolute;
 					top: 50%;
@@ -186,17 +316,16 @@
 				&:after {
 					content: "";
 					display: block;
-					width: 10px;
+					width: 20px;
 					height: 1px;
 					background: white;
-					@include rotate(-45deg);
 					position: absolute;
 					top: 50%;
-					margin-top: 3px;
+					//margin-top: 1px;
 					right: 24px;
 				}
 				@include md {
-					font-size: 12px;
+					font-size: 32px;
 				}
 				i {
 					font-size: 16px;
@@ -242,26 +371,26 @@
 	}
 }
 .collections {
-	padding: 50px 20px 50px;
+	padding: 50px 0 50px;
 	@include clearfix();
 	//background: transparentize($gray-bg, .4);
 	@include sm {
-		padding: 60px 48px 100px;
+		padding: 60px 0 100px;
 	}
 	@include md {
-		padding: 60px 68px 160px;
+		padding: 60px 0 160px;
 	}
 	h4 {
 		font-family: $font-nav;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 		word-spacing: 3px;
-		//font-weight: 400;
+		font-weight: 400;
 		font-size: 11px;
 		padding: 0;
 		margin-bottom: 20px;
 		@include sm {
-			padding: 0 20px;
+			padding: 0;
 			margin-bottom: 60px;
 		}
 	}
@@ -270,7 +399,7 @@
 		margin: 0;
 		list-style: none;
 		@include sm {
-			padding: 0 20px;
+			padding: 0;
 		}
 		li {
 			border-bottom: $border-style;
@@ -280,7 +409,7 @@
 				font-family: $font-title;
 				color: $text-light;
 				font-size: 14px;
-				font-weight: 500;
+				font-weight: 400;
 				text-transform: uppercase;
 				letter-spacing: 2px;
 				line-height: 1.4;

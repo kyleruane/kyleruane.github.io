@@ -1,19 +1,20 @@
 // Fonts
 
-$font-nav: "Termina", sans-serif;
-$font-title: "Termina", sans-serif;
-$font-copy: "freight-text-pro", "FreightText", sans-serif;
+$font-nav: "Inter UI", sans-serif;
+$font-title: "Inter UI", sans-serif;
+//$font-copy: "freight-text-pro", "FreightText", sans-serif;
+$font-copy: "Inter UI", sans-serif;
 $font-icon: "FontAwesome";
 
 
 // Colors
 
-$text-color: 	#444;
-$text-light: 	#666;
+$text-color: 	  #222;
+$text-light: 	  #666;
 $heading-light: #999;
 $border-color: 	#e8e8e8;
-$gray-bg: 		#fafafa;
-
+$gray-bg: 		  #fafafa;
+$gold:          #b59900;
 
 // Sizes
 
@@ -67,8 +68,8 @@ $border-style: 1px solid $border-color;
 }
 @mixin heading {
 	font-family: $font-nav;
-	font-weight: 400;
-	@include uppercase;
+	font-weight: 800;
+	//@include uppercase;
 }
 @mixin section-heading {
 	@include heading;

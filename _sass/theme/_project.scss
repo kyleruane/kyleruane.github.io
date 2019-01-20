@@ -1,18 +1,25 @@
 .single {
 	@include sm {
-		padding-right: 52px;
 		padding-top: 24px;
 	}
 	@include md {
-		padding-right: 56px;
 		padding-top: 42px;
 	}
 	&.project {
 		@include sm {
 			padding-right: 0;
+			//box-shadow: 0 -1px 0 0 transparentize(black, .94);
 		}
 		@include xl {
-			padding-right: 10px;
+			//padding-right: 10px;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+			@include md {
+				flex-direction: row;
+			}
 		}
 	}
 	&.study {
@@ -39,53 +46,45 @@
 .project-intro {
 	overflow: hidden;
 	margin-bottom: 30px;
-	font-size: 14px;
-	height: 100%;
+	font-size: 13px;
+	flex-basis: 100%;
+	flex-shrink: 0;
 	@include sm {
 		margin-bottom: 0;
-		width: 180px;
-		position: absolute;
-		left: 38px;
+		display: flex;
+		flex-direction: row;
 	}
 	@include md {
-		width: 220px;
+		display: block;
+		flex-basis: 25%;
+		padding-right: 40px;
 	}
 	@include lg {
-		width: 260px;
+		padding-right: 50px;
 	}
 	@include xl {
-		width: 290px;
-		left: 60px;
-	}
-	@include xxl {
-		height: calc(100% - 120px);
-	}
-	.floater {
-		@include sm {
-			position: fixed;
-			width: 180px;
-		}
-		@include md {
-			width: 220px;
-		}
-		@include lg {
-			width: 260px;
-		}
-		@include xl {
-			width: 290px;
-		}
+		padding-right: 60px;
 	}
 	h2 {
 		text-align: left;
 		margin-top: 0;
 		max-width: 100%;
 		font-family: $font-title;
-		font-weight: 500;
+		font-weight: 700;
 		font-size: 11px;
 		margin-bottom: 30px;
 		@include sm {
-			font-size: 14px;
-			margin-bottom: 36px;
+			font-size: 18px;
+			margin-bottom: 24px;
+			flex-basis: 25%;
+		}
+		@include md {
+			font-size: 18px;
+			margin-bottom: 28px;
+		}
+		@include lg {
+			font-size: 24px;
+			margin-bottom: 30px;
 		}
 		i {
 			font-size: 16px;
@@ -97,17 +96,29 @@
 			}
 		}
 	}
+	.text {
+		@include sm {
+			flex-basis: 75%;
+		}
+	}
 	p {
 		font-size: inherit;
 	}
 	time {
 		font-style: italic;
 		font-family: $font-copy;
-		font-weight: 400;
+		font-weight: 300;
 		color: transparentize($text-light, .2);
+		font-size: 11px;
+		@include sm {
+			font-size: 11px;
+		}
+		@include md {
+			font-size: 12px;
+		}
 	}
 	a {
-		font-weight: 400;
+		font-weight: 600;
 		color: #111;
 		border-bottom: $border-style;
 	}
@@ -123,17 +134,18 @@
 }
 .project-content {
 	margin-bottom: 60px;
+	flex-basis: 100%;
 	@include sm {
-		margin-left: 220px;
+		//margin-left: 220px;
 	}
 	@include md {
-		margin-left: 260px;
+		//margin-left: 260px;
 	}
 	@include lg {
-		margin-left: 300px;
+		//margin-left: 300px;
 	}
 	@include xl {
-		margin-left: 360px;
+		//margin-left: 360px;
 	}
 	.feature {
 		text-align: center;
