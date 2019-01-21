@@ -2,8 +2,10 @@
 layout: project
 title: Metro
 description: |
- <p>eCommerce design for a industrial and commercial shelving manufacturer. Their extensive product line required a new navigation structure to let site visitors easily find applicable categories and items.</p>
- <p>Deliverables included designs for the navigation, homepage, product page layouts, categorization, and a literature reference system.</p>
+ <p>eCommerce design and internal sales tool for a industrial and commercial shelving manufacturer.</p>
+ <p>Their extensive product line required a new navigation structure to let potential customers easily find applicable categories and items.</p>
+ <p>Sales representatives needed a way to easily access a library of information about their product line at any time. The resulting app lets them use product materials such as images, manuals, warranties, and competitors in the field during sales pitches.</p>
+ <p>Deliverables included designs for the website navigation, homepage, shopping experience, and literature reference system, as well as designs for the entire web-based app.</p>
  <time>c. 2016</time>
 
 feature: metro/hero.jpg
@@ -26,3 +28,13 @@ size: normal
 ![Metro Literature Detail]({{site.project_img_path}}metro/modal.jpg)
 
 ![Metro Site Wireframes]({{site.project_img_path}}metro/wireframes.jpg)
+
+![]({{site.project_img_path}}metro/metro_app_2.jpg)
+
+![]({{site.project_img_path}}metro/metro_app_3.jpg)
+
+![]({{site.project_img_path}}metro/metro_app_4.jpg)
+
+![]({{site.project_img_path}}metro/metro_app_5.jpg)
+
+![]({{site.project_img_path}}metro/metro_app_6.jpg)

@@ -6,7 +6,7 @@
 	overflow: hidden;
 	@include sm {
 		padding: 40px 48px 80px;
-		min-height: 100vh;
+		//min-height: 100vh;
 		//background-image: url(../images/trees_light.jpg);
 		@include background;
 	}
@@ -81,21 +81,41 @@
 	h2 {
 		font-size: 40px;
 		margin: 0 0 10px;
-		font-weight: 600;
+		font-weight: 400;
+		letter-spacing: normal;
 		@include sm {
-			font-size: 68px;
+			font-size: 100px;
+			line-height: .9;
+			margin-bottom: 20px;
+		}
+		@include md {
+			font-size: 110px;
+			line-height: .875;
+			margin-bottom: 24px;
+		}
+		@include lg {
+			font-size: 120px;
+			line-height: .85;
+			letter-spacing: -.015em;
+			margin-bottom: 26px;
 		}
 	}
 	h3 {
 		font-size: 24px;
-		font-weight: 900;
+		font-weight: 400;
 		margin: 0 0 24px;
-		text-shadow: 0 0 10px transparentize(white, .50);
-		font-family: $font-copy;
-		text-transform: none;
+		//text-shadow: 0 0 10px transparentize(white, .50);
+		//font-family: $font-copy;
+		//text-transform: none;
 		letter-spacing: normal;
 		@include sm {
-			font-size: 32px;
+			font-size: 80px;
+		}
+		@include md {
+			font-size: 100px;
+		}
+		@include lg {
+			font-size: 120px;
 		}
 		i, em {
 			font-weight: 500;
@@ -107,22 +127,29 @@
 		}
 	}
 	h5 {
-		font-weight: 500;
+		font-weight: 400;
 		font-size: 14px;
 		margin-top: 30px;
-		color: lighten($text-light, 10%);
+		color: $text-light;
 		letter-spacing: 1.5px;
+		font-family: $font-nav;
+		font-weight: 400;
+		margin-bottom: 24px;
 		i, em {
-			font-weight: 500;
-			font-size: 17px;
-			color: lighten($text-light, 30%);
+			font-weight: 300;
+			font-size: 13px;
+			color: lighten($text-light, 20%);
 			font-family: $font-copy;
 			letter-spacing: .35px;
 			text-transform: none;
 			letter-spacing: normal;
 			@include sm {
-				font-size: 19px;
+				font-size: 15px;
+				margin-left: 3px;
 			}
+		}
+		a {
+			border-bottom: 1px solid #e8e8e8;
 		}
 	}
 	cite {
@@ -134,20 +161,44 @@
 	hr {
 		margin: 40px 0;
 		@include sm {
+			margin: 30px 0 40px;
+		}
+		@include md {
+			margin: 40px 0 50px;
+		}
+		@include lg {
 			margin: 50px 0 60px;
 		}
 	}
 	p {
 		text-shadow: 0 0 10px transparentize(white, .50);
+		@include sm {
+			line-height: 1.8;
+			font-size: 14px;
+		}
+		@include md {
+			line-height: 1.8;
+			font-size: 15px;
+		}
+		@include lg {
+			line-height: 1.9;
+			font-size: 16px;
+		}
 		a {
 			color: #222;
 			border-bottom: $border-style;
-			font-weight: 500;
+			font-weight: 600;
 		}
 	}
 	&.hireme {
 		@include sm {
-			background-image: url(../images/axe.jpg);
+			//background-image: url(../images/axe.jpg);
+		}
+		.text {
+			h3 {
+				margin-top: 36px;
+				line-height: .9;
+			}
 		}
 	}
 }

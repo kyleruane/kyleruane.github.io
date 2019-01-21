@@ -1,29 +1,31 @@
 .outro {
 	padding: 100px 20px 50px;
 	@include clearfix();
-	@include sm { 
+	@include sm {
 		padding: 160px 48px 100px;
 	}
-	@include md { 
+	@include md {
 		padding: 200px 68px;
 	}
 	.text {
-		font-size: 14px;
+		font-size: 13px;
 		@include sm {
 			width: 66.666666%;
 			float: right;
 			padding-top: 6px;
+			font-size: 14px;
 		}
 		@include md {
 			width: 50%;
-			font-size: 16px;
+			font-size: 15px;
 		}
 		p {
-			font-size: inherit; 
+			font-size: inherit;
 		}
 	}
 	.headline {
 		position: relative;
+		font-size: 13px;
 		&:before {
 			content: "";
 			display: none;
@@ -31,7 +33,7 @@
 			height: 1px;
 			background: $border-color;
 			position: absolute;
-			top: 24px;
+			top: 20px;
 			right: 24px;
 			@include sm {
 				display: block;
@@ -41,13 +43,14 @@
 			width: 33.333333%;
 			float: left;
 			padding: 0 20px 0 0;
+			font-size: 14px;
 		}
 		@include md {
 			width: 50%;
-			font-size: 16px;
+			font-size: 15px;
 		}
 		p {
-			font-size: inherit; 
+			font-size: inherit;
 		}
 		h2 {
 			margin-top: 0;
@@ -57,23 +60,37 @@
 			background: white;
 			position: relative;
 			margin-bottom: 24px;
+			line-height: .8;
+			letter-spacing: .01em;
 			@include sm {
 				padding: 0 20px;
-				font-size: 30px;
+				font-size: 40px;
+			}
+			@include md {
+				font-size: 52px;
+			}
+			@include lg {
+				font-size: 64px;
 			}
 		}
 	}
 	h4 {
-		font-size: 16px;
-		font-weight: 500;
-		margin: 0 0 32px; 
+		font-size: 11px;
+		font-weight: 400;
+		margin: 0 0 32px;
+		font-family: $font-nav;
+		margin-top: 30px;
 		@include sm {
-			font-size: 18px;
+			font-size: 13px;
+			margin-top: 36px;
+		}
+		a {
+			border-bottom: 1px solid #e8e8e8;
 		}
 	}
 	a {
-		font-size: 18px;
-		font-weight: 600;
+		//font-size: 18px;
+		//font-weight: 600;
 	}
 }
 .solutions {
@@ -91,13 +108,11 @@
 		@include lg {
 			padding: 140px 88px;
 		}
-		&:nth-child(even) {
-			background: transparentize($gray-bg, .4);
+		&:nth-child(odd) {
+			background: transparentize($gray-bg, .3);
 		}
 		&:first-child {
-			@include xs {
 				border-top: $border-style;
-			}
 		}
 		section {
 			@include make-md-column(6);
@@ -110,25 +125,40 @@
 				}
 			}
 			h6 {
-				font-size: 12px;
+				font-size: 10px;
 				font-weight: 400;
 				margin: 10px 0 12px;
 				font-family: $font-nav;
 				text-transform: uppercase;
-				color: transparentize($text-light, .15);
+				color: #222;
 				@include sm {
-					font-size: 14px;
+					font-size: 12px;
 					margin: 10px 0 24px;
 				}
 			}
 			h4 {
-				font-size: 22px;
+				font-size: 38px;
 				margin-bottom: 28px;
-				line-height: 1.3;
+				line-height: .9;
+				letter-spacing: .01em;
 				@include sm {
-					font-size: 28px;
+					font-size: 36px;
 				}
-
+				@include md {
+					font-size: 48px;
+				}
+				@include lg {
+					font-size: 60px;
+				}
+			}
+			p {
+				font-size: 13px;
+				@include sm {
+					font-size: 14px;
+				}
+				@include md {
+					font-size: 15px;
+				}
 			}
 			.need, .solution {
 				margin-bottom: 40px;

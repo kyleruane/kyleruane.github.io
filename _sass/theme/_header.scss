@@ -6,7 +6,7 @@
 	border-radius: 0;
 	z-index: 10;
 	@include sm {
-		width: 420px;
+		width: 480px;
 		@include rotate(90deg);
 		position: absolute;
 		top: 0;
@@ -221,6 +221,18 @@
 	}
 	&.project {
 		height: 120px;
+		@include sm {
+			height: 112px;
+		}
+		@include md {
+			height: 100px;
+		}
+		@include lg {
+			height: 100px;
+		}
+		@include xl {
+			height: 120px;
+		}
 	}
 	&.study {
 		height: 100px;

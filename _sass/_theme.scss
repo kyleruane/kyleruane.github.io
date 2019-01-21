@@ -57,6 +57,7 @@ body {
 }
 .container {
     max-width: 100%;
+    padding: 0 20px;
     @include sm {
         padding: 0 36px;
     }
@@ -70,9 +71,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-title;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: normal;
-    color: $text-light;
+    color: $text-color;
     line-height: 1.2;
     text-transform: uppercase;
     letter-spacing: 1.5px;

@@ -133,8 +133,14 @@ body {
 	box-shadow: 0 5px 10px 0 transparentize(black, .95), 0 10px 30px 0 transparentize(black, .93), 0 20px 50px 0 transparentize(black, .92);
 	background: white;
 	transition: margin .4s;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	@include xxl {
 		margin: 40px auto 64px;
+	}
+	> main {
+		flex-grow: 1;
 	}
 }
 .profile {

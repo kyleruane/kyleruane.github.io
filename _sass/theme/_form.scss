@@ -10,15 +10,15 @@ form {
 	}
 	input[type=submit] {
 		text-transform: uppercase;
-		padding-left: 16px;
-		padding-right: 16px;
-		font-weight: 400;
+		padding-left: 22px;
+		padding-right: 22px;
+		font-weight: 500;
 		@media (max-width: 767px) {
 			width: 100%;
 		}
 	}
 	.btn {
-		min-width: 100px; 
+		min-width: 100px;
 		box-shadow: 0 1px 3px 0 fadeout(black, 85%);
 		@media (max-width: 767px) {
 			width: 100%;
@@ -48,7 +48,7 @@ form {
 				height: 360px;
 				font-size: 16px;
 			}
-		} 
+		}
 		.button {
 			margin-top: 50px;
 		}
@@ -139,6 +139,10 @@ form {
 	&:active, &:focus {
 		border-color: #c4c4c4;
 	}
+}
+.form-control, form.contact input[type=text], form.contact input[type=email], form.contact textarea {
+	color: #222;
+	line-height: 1.4;
 }
 label {
 	font-size: 15px;

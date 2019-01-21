@@ -1,7 +1,30 @@
 .blog {
 	padding: 80px 0 120px;
+	position: relative;
+	overflow: hidden;
 	@include sm {
 		padding-top: 160px;
+	}
+	&:before {
+		content: "BLOG";
+		display: none;
+		color: $text-light;
+		font-size: 400px;
+		letter-spacing: -.015em;
+		position: absolute;
+		top: -300px;
+		left: -60px;
+		opacity: .04;
+		font-family: $font-title;
+		@include sm {
+			//display: block;
+			top: -300px;
+			font-size: 360px;
+		}
+		@include md {
+			font-size: 400px;
+			top: -300px;
+		}
 	}
 	.content {
 		max-width: 768px;
@@ -22,27 +45,31 @@
 			padding: 40px 20px;
 		}
 		h3 {
-			font-size: 11px;
+			font-size: 22px;
 			line-height: 1.4;
 			margin: 0;
-			font-weight: 500;
-			word-spacing: 3px;
+			font-weight: 400;
+			letter-spacing: .01em;
 			@include sm {
-				font-size: 13px;
+				font-size: 26px;
 				padding-right: 180px;
+			}
+			@include sm {
+				font-size: 32px;
 			}
 		}
 		.meta {
-			margin-top: 6px;
-			color: transparentize($text-light, .15);
+			margin-top: 2px;
+			color: $text-light;
 			font-size: 11px;
 			@include md {
 				position: absolute;
 				font-size: 13px;
 				right: 20px;
-				top: 36px;
-				text-align: right;
-				margin: 0;
+				top: 50%;
+		    text-align: right;
+		    margin: 0;
+		    margin-top: -9px;
 			}
 		}
 	}
@@ -138,9 +165,10 @@
 		color: $text-color;
 	}
 	.blog-title {
-		font-size: 24px;
-		font-weight: 900;
+		font-size: 12px;
+		font-weight: 400;
 		margin: 30px 0 20px;
+		font-family: "Termina";
 		@include sm {
 			display: none;
 		}
@@ -183,55 +211,77 @@
 		header {
 			margin-bottom: 40px;
 			@include sm {
-				margin-bottom: 68px;
+				margin-bottom: 50px;
 			}
 			h2 {
-				font-weight: 500;
-				font-size: 16px;
+				font-weight: 400;
+				font-size: 32px;
 				margin-top: 0;
+				letter-spacing: normal;
+				line-height: .9;
 				@include sm {
-					font-size: 18px;
+					font-size: 52px;
+				}
+				@include md {
+					font-size: 68px;
 				}
 			}
 		}
 		.meta {
-			color: transparentize($text-light, .15);
+			color: $text-light;
 			font-size: 12px;
-			margin-bottom: 14px;
+			margin-bottom: 10px;
 			@include sm {
 				font-size: 13px;
-				margin-bottom: 26px;
+				margin-bottom: 12px;
 			}
 		}
 		h2,h3,h4 {
-			margin: 40px 0 36px;
-			font-weight: 500;
+			margin: 24px 0 22px;
+			@include sm {
+				margin: 30px 0 26px;
+			}
+			@include md {
+				margin: 40px 0 36px;
+			}
 		}
 		h2 {
-			font-size: 16px;
+			font-size: 30px;
+			letter-spacing: .015em;
 			@include sm {
-				font-size: 18px;
+				font-size: 32px;
+			}
+			@include md {
+				font-size: 40px;
 			}
 		}
 		h3 {
-			font-size: 14px;
+			font-size: 24px;
+			letter-spacing: .015em;
 			@include sm {
-				font-size: 16px;
+				font-size: 32px;
 			}
 		}
 		h4 {
-			font-size: 11px;
+			font-size: 18px;
+			letter-spacing: .015em;
 			@include sm {
-				font-size: 13px;
+				font-size: 26px;
 			}
 		}
 		a {
 			color: #111;
-			font-weight: 400;
+			font-weight: 600;
 			border-bottom: $border-style;
 		}
 		ul, ol {
-			margin: 36px 0 40px;
+			margin: 24px 0 24px;
+			@include sm {
+				margin: 28px 0 30px;
+			}
+			@include md {
+				margin: 36px 0 40px;
+			}
 			li {
 				line-height: 1.6;
 				padding: 4px 0;
@@ -368,9 +418,12 @@
 				}
 			}
 			h4 {
-				font-size: 14px;
+				font-size: 20px;
+				//font-family: "Termina";
+				font-weight: 400;
+				letter-spacing: .025em;
 				@include sm {
-					font-size: 14px;
+					font-size: 20px;
 				}
 				&:first-child {
 					margin-top: 0;
