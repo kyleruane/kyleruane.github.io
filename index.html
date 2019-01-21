@@ -16,7 +16,7 @@ layout: default
 <section class="work">
     <div class="grid">
 
-        {% assign projects = site.projects | sort: 'date' %}
+        {% assign projects = site.projects | sort: 'order' %}
         {% for projects in site.projects %}
         {% unless projects.category == "collection"%}
         {% unless projects.category == "study"%}

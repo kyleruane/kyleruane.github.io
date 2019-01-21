@@ -10,7 +10,8 @@ feature: tanmaya/tg_hero.jpg
 backdrop: tanmaya/tg_hero.jpg
 thumb:
 
-date: 2000-01-08
+date: 2000-01-01
+order: 93
 category: UI
 size: half
 ---
@@ -26,4 +27,3 @@ size: half
 <p class="half"><img src="{{site.project_img_path}}tanmaya/tg_combo.jpg"></p>
 
 ![Image]({{site.project_img_path}}tanmaya/tg_image.jpg)
-

@@ -13,7 +13,8 @@ feature: classcraft/cc_hero.jpg
 backdrop: classcraft/cc_bg.jpg
 thumb: classcraft/cc_thumb.png
 
-date: 2000-01-06
+date: 2000-01-01
+order: 91
 category: UI
 size: half
 ---

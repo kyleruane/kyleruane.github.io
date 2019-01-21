@@ -82,6 +82,9 @@
 		}
 		&.affix {
 			top: 40px;
+			@include xs {
+				position: static;
+			}
 		}
 	}
 	h2 {
@@ -92,7 +95,8 @@
 		font-weight: 400;
 		font-size: 11px;
 		margin-bottom: 20px;
-		letter-spacing: .35px;
+		letter-spacing: normal;
+		line-height: .9;
 		@include sm {
 			font-size: 26px;
 			margin-bottom: 24px;
@@ -201,6 +205,37 @@
 			}
 			@include lg {
 				width: 33.333333%;
+			}
+		}
+	}
+	h5 {
+		font-family: $font-nav;
+		padding: 0 10px;
+		margin-top: 16px;
+		font-size: 10px;
+		position: relative;
+		@include sm {
+			font-size: 11px;
+			text-align: right;
+		}
+		&:before {
+			content: "";
+			display: block;
+			height: 1px;
+			width: calc(100% - 20px);
+			background: #e8e8e8;
+			position: absolute;
+			top: 50%;
+			margin-top: 0px;
+			right: 10px;
+		}
+		span {
+			background: white;
+			padding-right: 14px;
+			position: relative;
+			@include sm {
+				padding-right: 0;
+				padding-left: 14px;
 			}
 		}
 	}
