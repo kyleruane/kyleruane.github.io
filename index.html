@@ -16,7 +16,7 @@ layout: default
 <section class="work">
     <div class="grid">
 
-        {% assign projects = site.projects | sort: 'order' %}
+        {% assign projects = site.projects | sort: 'date' %}
         {% for projects in site.projects %}
         {% unless projects.category == "collection"%}
         {% unless projects.category == "study"%}
@@ -40,7 +40,7 @@ layout: default
 
     </div>
 </section>
-
+<!--
 <section class="collections">
     <h4>Collections</h4>
     <ul>
@@ -53,6 +53,7 @@ layout: default
         {% endfor %}
     </ul>
 </section>
+-->
 <section class="outro">
     <div class="headline">
         <h2>Hire Me</h2>

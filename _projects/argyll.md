@@ -9,8 +9,7 @@ feature: argyll/hero.jpg
 backdrop: argyll/hero.jpg
 thumb:
 
-date: 2000-01-01
-order: 99
+date: 2000-01-30
 category: UI
 size: half
 ---

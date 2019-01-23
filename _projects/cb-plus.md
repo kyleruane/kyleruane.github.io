@@ -2,33 +2,17 @@
 layout: project
 title: Cotton Bureau Plus
 description: |
- <p>Early in 2018, we embarked on a comprehensive redesign. We began offering our own size-inclusive t-shirts as an option alongside the ones we've used for years, giving customers an option for the first time. This, combined with the emergence of non-apparel products on the site significantly increased the complexity of the purchasing experience.</p>
- <p>Our goal was to come up with a system that could accommodate many different product configurations, successfully lead the customer through the various options, give the user resources and information about each available piece of apparel, and (since this is the entrance point for most visitors) present other products without overwhelming users.</p>
+ <p>Cotton Bureau Plus is a do-it-for-me solution for high profile people that want to offer merchandise but have no interest in managing the countless responsibilities that entails—product design, production, fulfillment, e-commerce, and customer service.</p>
+ <p>Before the official launch at the start of 2019, we ran a pilot program for an entire year, building a system that allowed partners to have a branded storefront on the Cotton Bureau platform.</p>
  <time>c. 2018</time>
 
-feature: cotton-bureau/cb_pdp_wide.jpg
-backdrop: cotton-bureau/cb_pdp_bg.jpg
-thumb: cotton-bureau/cb_pdp_thumb.png
+feature: cotton-bureau/cb_plus_site.jpg
+backdrop: cotton-bureau/cb_plus_bg.jpg
+thumb: cotton-bureau/cb_plus_logo.png
 
-date: 2000-01-01
-order: 81
+date: 2000-01-11
 category: UI
 size: normal
 ---
 
-
-![Image Cotton Bureau PDP Mobile View]({{site.project_img_path}}cotton-bureau/cb_pdp_mobile.jpg)
-![Image Cotton Bureau PDP Purchase Forms]({{site.project_img_path}}cotton-bureau/cb_pdp_buy.jpg)
-![Image Cotton Bureau PDP Non-Apparel Items]({{site.project_img_path}}cotton-bureau/cb_pdp_non-apparel.jpg)
-![Image Cotton Bureau PDP Fixed Headers]({{site.project_img_path}}cotton-bureau/cb_pdp_headers.jpg)
-<br><br>
-<h5><span>Alternate Concepts</span></h5>
-<br>
-![Image Cotton Bureau PDP Alternate Concept]({{site.project_img_path}}cotton-bureau/cb_pdp_alt_fat_buttons.jpg)
-![Image Cotton Bureau PDP Alternate Concept]({{site.project_img_path}}cotton-bureau/cb_pdp_alt_steps.jpg)
-![Image Cotton Bureau PDP Alternate Concept]({{site.project_img_path}}cotton-bureau/cb_pdp_alt_drawer.jpg)
-![Image Cotton Bureau PDP Alternate Concept]({{site.project_img_path}}cotton-bureau/cb_pdp_alt_stack.jpg)
-
-<!--
-<p>Because of the nature of Cotton Bureau's business model (a platform allowing many individuals to sell their designs on a t-shirt), a majority of the site's traffic is sent directly to a product by its designer, making it far and away the most critical page on the site.</p>
--->
+![Image Cotton Bureau Plus Stores]({{site.project_img_path}}cotton-bureau/cb_plus_stores.jpg)

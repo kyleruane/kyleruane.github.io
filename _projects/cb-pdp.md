@@ -10,10 +10,9 @@ feature: cotton-bureau/cb_pdp_wide.jpg
 backdrop: cotton-bureau/cb_pdp_bg.jpg
 thumb: cotton-bureau/cb_pdp_thumb.png
 
-date: 2000-01-01
-order: 85
+date: 2000-01-13
 category: UI
-size: normal
+size: half
 ---
 
 

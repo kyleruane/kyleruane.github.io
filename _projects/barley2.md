@@ -9,8 +9,7 @@ feature: b2/hero.jpg
 backdrop: b2/b2_bg.jpg
 thumb: b2/b2_thumb.png
 
-date: 2000-01-01
-order: 86
+date: 2000-01-16
 category: UI
 size: normal
 ---

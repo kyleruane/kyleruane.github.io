@@ -10,8 +10,7 @@ feature: propadoo/hero.jpg
 backdrop: propadoo/hero.jpg
 thumb:
 
-date: 2000-01-01
-order: 95
+date: 2000-01-26
 category: UI
 size: half
 ---

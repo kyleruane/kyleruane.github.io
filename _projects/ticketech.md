@@ -3,11 +3,12 @@ layout: project
 title: Ticketech
 description: |
  <p>Design for a web application that manages parking lot locations. Owners and managers can monitor relevant data, per location and a given period of time.</p>
+ <p>A series of interchangeable modules were designed to fit together in a fluid dashboard so that different experiences could be served to users with various roles.</p>
  <time>c. 2016</time>
 
 feature: ticketech/tt_app_1.jpg
 
-date: 2000-01-10
+date: 2000-01-14
 category: study
 size: half
 ---

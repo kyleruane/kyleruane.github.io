@@ -10,8 +10,7 @@ feature: citywide/cw_hero.jpg
 backdrop: citywide/cw_bg.jpg
 thumb: citywide/cw_thumb.png
 
-date: 2000-01-01
-order: 92
+date: 2000-01-22
 category: UI
 size: normal
 ---
