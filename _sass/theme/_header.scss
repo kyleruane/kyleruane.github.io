@@ -190,10 +190,13 @@
 		padding: 0;
 		list-style: none;
 		li {
-			@include heading;
-			font-size: 15px;
+			//@include heading;
+			font-family: $font-title;
+			text-transform: uppercase;
+			font-size: 32px;
 			padding: 6px 0;
 			text-align: center;
+			line-height: .9;
 			&.active {
 				a {
 					text-decoration: line-through;

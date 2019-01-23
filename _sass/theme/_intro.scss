@@ -1,5 +1,5 @@
 .intro {
-	padding: 140px 20px 80px;
+	padding: 80px 20px 80px;
 	min-height: 400px;
 	@include clearfix();
 	position: relative;
@@ -83,6 +83,7 @@
 		margin: 0 0 10px;
 		font-weight: 400;
 		letter-spacing: normal;
+		line-height: .9;
 		@include sm {
 			font-size: 100px;
 			line-height: .9;
@@ -101,15 +102,16 @@
 		}
 	}
 	h3 {
-		font-size: 24px;
+		font-size: 40px;
 		font-weight: 400;
-		margin: 0 0 24px;
+		margin: 0 0 18px;
 		//text-shadow: 0 0 10px transparentize(white, .50);
 		//font-family: $font-copy;
 		//text-transform: none;
 		letter-spacing: normal;
 		@include sm {
 			font-size: 80px;
+			margin: 0 0 24px;
 		}
 		@include md {
 			font-size: 100px;
@@ -128,13 +130,17 @@
 	}
 	h5 {
 		font-weight: 400;
-		font-size: 14px;
+		font-size: 11px;
 		margin-top: 30px;
 		color: $text-light;
 		letter-spacing: 1.5px;
 		font-family: $font-nav;
 		font-weight: 400;
-		margin-bottom: 24px;
+		margin-bottom: 14px;
+		@include sm {
+			font-size: 14px;
+			margin-bottom: 24px;
+		}
 		i, em {
 			font-weight: 300;
 			font-size: 13px;
