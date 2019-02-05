@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Cotton Bureau Product Detail Page
+title: Cotton Bureau Product Page
 description: |
  <p>Early in 2018, we embarked on a comprehensive redesign. We began offering our own size-inclusive t-shirts as an option alongside the ones we've used for years, giving customers an option for the first time. This, combined with the emergence of non-apparel products on the site significantly increased the complexity of the purchasing experience.</p>
  <p>Our goal was to come up with a system that could accommodate many different product configurations, successfully lead the customer through the various options, give the user resources and information about each available piece of apparel, and (since this is the entrance point for most visitors) present other products without overwhelming users.</p>

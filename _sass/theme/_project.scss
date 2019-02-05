@@ -93,7 +93,7 @@
 		max-width: 100%;
 		font-family: $font-title;
 		font-weight: 400;
-		font-size: 32px;
+		font-size: 40px;
 		margin-bottom: 20px;
 		letter-spacing: normal;
 		line-height: .9;
@@ -147,7 +147,13 @@
 	ul {
 		list-style: none;
 		padding: 0;
-		margin-top: 40px;
+		margin-top: 18px;
+		@include sm {
+			margin-top: 36px;
+		}
+		@include md {
+			margin-top: 40px;
+		}
 		li {
 			line-height: 1.7;
 			padding: 4px 0;
@@ -170,7 +176,10 @@
 	}
 	.feature {
 		text-align: center;
-		margin-bottom: 10px;
+		margin-bottom: 16px;
+		@include sm {
+			margin-bottom: 10px;
+		}
 		img {
 			width: 100%;
 		}
@@ -188,8 +197,10 @@
 			}
 		}
 		img {
+			margin-bottom: 16px;
 			@include sm {
 				border: 10px solid white;
+				margin-bottom: 0;
 			}
 		}
 		.half {

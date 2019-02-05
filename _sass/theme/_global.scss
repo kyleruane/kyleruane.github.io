@@ -126,6 +126,9 @@ body {
 		}
 	}
 }
+html.freeze {
+	overflow: hidden !important;
+}
 .site-wrapper {
 	max-width: 1600px;
 	position: relative;

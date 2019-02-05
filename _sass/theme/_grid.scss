@@ -72,6 +72,10 @@
 	.grid {
 		//padding: 0 10px;
 		width: 100%;
+		padding: 0 20px;
+		@include sm {
+			padding: 0;
+		}
 	}
 	.grid-sizer {
 		width: 100%;
@@ -87,10 +91,12 @@
 		//padding: 0 10px;
 		//margin-bottom: 20px;
 		display: block;
+		margin-bottom: 16px;
 		@include sm {
 			//width: 33.333333%;
 			//float: left;
 			//display: inline-block;
+			margin-bottom: 0;
 		}
 		@include md {
 			//width: 25%;
@@ -141,7 +147,7 @@
 			@include background;
 			height: 0;
 			width: 100%;
-			padding-bottom: 66.66666%;
+			padding-bottom: 80%;
 			position: relative;
 			@include sm {
 				padding-bottom: 50%;

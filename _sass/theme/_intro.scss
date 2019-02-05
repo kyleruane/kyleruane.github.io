@@ -5,12 +5,18 @@
 	position: relative;
 	overflow: hidden;
 	@include sm {
-		padding: 40px 48px 80px;
+		padding: 40px 30px 80px;
 		//min-height: 100vh;
 		//background-image: url(../images/trees_light.jpg);
 		@include background;
 	}
 	@include md {
+		padding: 50px 40px 100px;
+	}
+	@include lg {
+		padding: 50px 52px 100px;
+	}
+	@include xl {
 		padding: 50px 68px 100px;
 	}
 	@include xxl {
@@ -67,38 +73,38 @@
 	.text {
 		font-size: 14px;
 		@include sm {
-			padding-left: 20px;
 			float: left;
 			width: 66.666666%
 		}
 		@include md {
 			width: 50%;
 		}
-		@include md {
+		@include lg {
+			padding-left: 20px;
 			font-size: 16px;
 		}
 	}
 	h2 {
-		font-size: 40px;
-		margin: 0 0 10px;
+		font-size: 64px;
+		margin: 0 0 14px;
 		font-weight: 400;
 		letter-spacing: normal;
-		line-height: .9;
+		line-height: .85;
 		@include sm {
 			font-size: 100px;
-			line-height: .9;
-			margin-bottom: 20px;
+			line-height: .825;
+			margin-bottom: 14px;
 		}
 		@include md {
 			font-size: 110px;
-			line-height: .875;
-			margin-bottom: 24px;
+			line-height: .825;
+			margin-bottom: 20px;
 		}
 		@include lg {
 			font-size: 120px;
-			line-height: .85;
+			line-height: .825;
 			letter-spacing: -.015em;
-			margin-bottom: 26px;
+			margin-bottom: 24px;
 		}
 	}
 	h3 {
@@ -138,8 +144,15 @@
 		font-weight: 400;
 		margin-bottom: 14px;
 		@include sm {
-			font-size: 14px;
+			font-size: 12px;
+			margin-bottom: 18px;
+		}
+		@include md {
+			font-size: 13px;
 			margin-bottom: 24px;
+		}
+		@include lg {
+			margin-bottom: 30px;
 		}
 		i, em {
 			font-weight: 300;

@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
     // Featured Photo
-    $('.work .background').css('background-image', function(){ 
+    $('.work .background').css('background-image', function(){
        return 'url(' + $(this).children('.bg').find('img').attr("src") + ')';
     });
-    $('.work .feature').css('background-image', function(){ 
+    $('.work .feature').css('background-image', function(){
        return 'url(' + $(this).siblings('.thumb').find('img').attr("src") + ')';
     });
-    $('.profile .feature .image').css('background-image', function(){ 
+    $('.profile .feature .image').css('background-image', function(){
        return 'url(' + $(this).parent().find('img').attr("src") + ')';
-    });    
+    });
 
     // Replace SVG images with PNG versions if SVG is not supported
     if(!Modernizr.svg) {
@@ -28,17 +28,18 @@ $(document).ready(function(){
         $('.mobile-menu').fadeToggle();
         $(this).toggleClass('active');
         $('body').toggleClass('freeze');
+        $('html').toggleClass('freeze');
     });
 
     // Change style for active nav link
     var section = window.location.pathname.split('/'),
         sectionPart = section[1];
-        
+
     if ( typeof sectionPart === "undefined" || sectionPart == '' ) {
         sectionPart = 'projects';
         $('.main-nav ul li').first().addClass('active');
     }
-    
+
     $('.main-nav ul li a[href*="'+sectionPart+'"]').parent().addClass('active');
 
 
@@ -76,7 +77,7 @@ $(document).ready(function(){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
     });
-   
+
     // The function that sorts items
     /*
     (function($){
