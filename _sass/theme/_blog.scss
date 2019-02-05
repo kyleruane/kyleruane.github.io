@@ -37,7 +37,7 @@
 		}
 	}
 	.article {
-		padding: 24px 0;
+		padding: 28px 0 24px;
 		position: relative;
 		border-bottom: $border-style;
 		display: block;
@@ -45,11 +45,11 @@
 			padding: 40px 20px;
 		}
 		h3 {
-			font-size: 22px;
-			line-height: 1.4;
+			font-size: 28px;
+			line-height: .875;
 			margin: 0;
 			font-weight: 400;
-			letter-spacing: .01em;
+			letter-spacing: normal;
 			@include sm {
 				font-size: 26px;
 				padding-right: 180px;
