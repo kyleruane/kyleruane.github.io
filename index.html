@@ -17,56 +17,79 @@ layout: home
 </section>
 -->
 
-<section class="work">
-    <div class="grid">
 
-        {% assign projects = site.projects | sort: 'date' %}
-        {% for projects in site.projects %}
-        {% unless projects.category == "collection"%}
-        {% unless projects.category == "study"%}
+  <section class="work">
+    <div class="container">
+      <div class="collections">
+        <h4>Collections</h4>
+        <ul>
+          {% for projects in site.projects %}
+          {% if projects.category == "collection"%}
+          <li>
+            <a href="{{ site.baseurl }}{{ projects.url }}">
+              <h3>{{ projects.title }}</h3>
+              <p>{{ projects.snippet }}</p>
+            </a>
+          </li>
+          {% endif %}
+          {% endfor %}
+      </ul>
+      </div>
+      <div class="featured">
+        <h4>Featured Projects</h4>
+        <div class="grid">
+            {% assign projects = site.projects | sort: 'date' %}
+            {% for projects in site.projects %}
+            {% unless projects.category == "collection"%}
+            {% unless projects.category == "study"%}
 
-        <a href="{{ site.baseurl }}{{ projects.url }}" class="item {{ projects.size }}">
-            <div class="image">
-              <figure class="background">
-                  <div class="feature"></div>
-                  <div class="image-placeholder bg"><img src="{{site.project_img_path}}{{ projects.backdrop }}"></div>
-                  <div class="image-placeholder thumb"><img src="{{site.project_img_path}}{{ projects.thumb }}"></div>
-              </figure>
-            </div>
-            <div class="details">
-              <div class="title">
-                  <h5>{{ projects.title }}</h5>
-              </div>
-              <figcaption>
-                <div class="text">
-                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <a href="{{ site.baseurl }}{{ projects.url }}" class="item {{ projects.size }}">
+                <div class="image">
+                  <figure class="background">
+                      <div class="feature"></div>
+                      <div class="image-placeholder bg"><img src="{{site.project_img_path}}{{ projects.backdrop }}"></div>
+                      <div class="image-placeholder thumb"><img src="{{site.project_img_path}}{{ projects.thumb }}"></div>
+                  </figure>
                 </div>
-                <div class="actions">
-                  <button>
-                    <span>View Project</span>
-                  </button>
+                <!--
+                <div class="details">
+                  <div class="title">
+                      <h5>{{ projects.title }}</h5>
+                  </div>
+
+                  <figcaption>
+                    <div class="text">
+                      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                    <div class="actions">
+                      <button>
+                        <span>View Project</span>
+                      </button>
+                    </div>
+                  </figcaption>
+
                 </div>
-              </figcaption>
-            </div>
-        </a>
-        {% endunless %}
-        {% endunless %}
-        {% endfor %}
-
-    </div>
-</section>
-<section class="outro">
-  <!--
-    <div class="headline">
-        <h2>Hire Me</h2>
-    </div>
-  -->
-    <div class="text">
-        <div>
-            <h2>Hire Me</h2>
-            <p>I am available for contract production or consulting work—as an extension of your product team, backup on agency projects, or your one-man design department. I can help plan your application or website, define its users, map out interactions, or give it the visual detail needed to set it apart, delivering any number of a variety of assets—from wireframes and user flow charts, to prototypes, to artwork source files, to code.</p>
-
-            <h4><a href="{{ site.baseurl }}/hire">Read more about my capabilities</a></h4>
+                -->
+            </a>
+            {% endunless %}
+            {% endunless %}
+            {% endfor %}
         </div>
+      </div>
     </div>
-</section>
+  </section>
+  <section class="outro">
+    <!--
+      <div class="headline">
+          <h2>Hire Me</h2>
+      </div>
+    -->
+      <div class="text">
+          <div>
+              <h2>Hire Me</h2>
+              <p>I am available for contract production or consulting work—as an extension of your product team, backup on agency projects, or your one-man design department. I can help plan your application or website, define its users, map out interactions, or give it the visual detail needed to set it apart, delivering any number of a variety of assets—from wireframes and user flow charts, to prototypes, to artwork source files, to code.</p>
+
+              <h4><a href="{{ site.baseurl }}/hire">Read more about my capabilities</a></h4>
+          </div>
+      </div>
+  </section>

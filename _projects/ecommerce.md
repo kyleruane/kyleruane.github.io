@@ -5,6 +5,8 @@ description: |
  <p>Designs done for a number of online shops, powered by various platforms including Magento, Volusion, Shopify, WordPress/Woo, Yahoo!, and custom .net setups. </p>
  <p>Deliverables typically included source artwork files (such as Photoshop or Sketch) and development style guide.</p>
  <time>c. 2008-2015</time>
+snippet: |
+  Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris.
 
 feature: metro/hero.jpg
 
@@ -46,5 +48,3 @@ size: normal
 ![Breaker Boy Store Design]({{site.project_img_path}}breakerboy/bb_pages.jpg)
 
 ![Italian Cookie Store Design]({{site.project_img_path}}ics/ics_pages.jpg)
-
-

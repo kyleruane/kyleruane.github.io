@@ -15,7 +15,13 @@ textarea {
     color: $text-color;
 }
 body {
-    line-height: 1.8;
+    line-height: 1.7;
+    @include sm {
+      line-height: 1.75;
+    }
+    @include md {
+      line-height: 1.8;
+    }
 }
 // Remove text-shadow in selection highlight: h5bp.com/i
 ::-moz-selection {
@@ -49,7 +55,7 @@ body {
 }
 body {
     font-family: $font-copy;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     color: $text-color;
     @include sm {
@@ -57,12 +63,17 @@ body {
     }
 }
 .container {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 20px;
     @include sm {
-        padding: 0 36px;
+      padding: 0 24px;
     }
     @include md {
-        padding: 0 48px;
+      padding: 0 30px;
+    }
+    @include lg {
+      padding: 0 40px;
     }
 }
 
@@ -73,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $font-title;
     font-weight: 700;
     letter-spacing: normal;
-    color: $text-color;
+    color: $text-dark;
     line-height: 1.2;
     //text-transform: uppercase;
     //letter-spacing: 1.5px;

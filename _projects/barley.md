@@ -10,7 +10,7 @@ feature: barley/editor.jpg
 backdrop: barley/editor.jpg
 thumb:
 
-date: 2000-01-12
+date: 2000-01-28
 category: UI
 size: normal
 ---
@@ -32,5 +32,3 @@ size: normal
 ![Image]({{site.project_img_path}}barley/barley_brand_applications.jpg)
 
 ![Image]({{site.project_img_path}}barley/barley_feat.jpg)
-
-

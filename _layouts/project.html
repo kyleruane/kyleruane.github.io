@@ -2,12 +2,27 @@
 {% include header.html %}
 
 	<main class="single project">
+		<div class="site-wrapper">
 		<div class="container">
 
 			<section class="project-intro">
-				<h2>{{ page.title }}</h2>
+				<div class="meta">
+					<h2>{{ page.title }}
+						{% if circa %}
+						<time>c. {{ page.circa }}</time>
+						{% endif %}
+					</h2>
+				</div>
   			<div class="text">
-	  			{{ page.description }}
+					<div class="description">
+	  				{{ page.description }}
+					</div>
+					{% if role %}
+					<div class="role">
+						{{ page.role }}
+						{{ page.linkage }}
+					</div>
+					{% endif %}
 	  		</div>
 			</section>
 
@@ -21,6 +36,7 @@
 			</section>
 
 		</div>
+	</div>
 	</main>
 
 	{% include footer.html %}

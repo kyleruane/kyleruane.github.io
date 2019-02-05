@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Logos
+title: Logos & Marks
 description: |
  <p>Logo marks and identities designed for various clients across many different industries.</p>
  <p>Deliverables typically included logo system and branding guidelines.</p>

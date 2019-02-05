@@ -10,7 +10,7 @@ feature: swarm/mockup.jpg
 backdrop: swarm/mockup.jpg
 thumb:
 
-date: 2000-01-17
+date: 2000-01-31
 category: study
 size: half
 ---
