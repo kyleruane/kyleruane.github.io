@@ -150,6 +150,7 @@
 		@include transition(all .2s);
 	}
 	&.active {
+		position: fixed;
 		.icon-bar {
 			&:nth-of-type(2) {
 				top: 5px;
