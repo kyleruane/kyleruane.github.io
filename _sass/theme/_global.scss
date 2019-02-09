@@ -53,13 +53,13 @@
 	background: #e8e8e8;
 	margin-bottom: 20px;
 	@include sm {
-		margin-bottom: 18px;
+		margin-bottom: 30px;
 	}
 	@include md {
-		margin-bottom: 20px;
+		//margin-bottom: 20px;
 	}
 	@include lg {
-		margin-bottom: 24px;
+		//margin-bottom: 30px;
 	}
 }
 .image-placeholder {
@@ -179,6 +179,6 @@ body {
 		margin-top: -16px;
 	}
 	@include md {
-		margin-bottom: 52px;
+		margin-bottom: 32px;
 	}
 }
