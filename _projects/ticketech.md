@@ -7,9 +7,11 @@ description: |
  <time>c. 2016</time>
 
 feature: ticketech/tt_app_1.jpg
+backdrop: ticketech/tt_bg.jpg
+thumb: ticketech/tt_thumb.png
 
-date: 2000-01-14
-category: study
+date: 2000-01-16
+category: UI
 size: half
 ---
 
@@ -18,3 +20,8 @@ size: half
 ![]({{site.project_img_path}}ticketech/tt_app_3.jpg)
 
 ![]({{site.project_img_path}}ticketech/tt_app_4.jpg)
+
+![]({{site.project_img_path}}ticketech/dash1.jpg)
+![]({{site.project_img_path}}ticketech/dash2.jpg)
+
+![]({{site.project_img_path}}ticketech/wireframes.jpg)

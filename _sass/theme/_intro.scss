@@ -135,23 +135,25 @@
 		}
 	}
 	h5 {
-		font-weight: 400;
-		font-size: 11px;
+		font-weight: 300;
+		font-size: 13px;
 		margin-top: 30px;
-		color: $text-light;
-		letter-spacing: 1.5px;
+		//color: $text-light;
+		//letter-spacing: 1.5px;
+		letter-spacing: normal;
 		font-family: $font-nav;
-		font-weight: 400;
 		margin-bottom: 14px;
+		text-transform: none;
 		@include sm {
-			font-size: 12px;
+			font-size: 16px;
 			margin-bottom: 18px;
 		}
 		@include md {
-			font-size: 13px;
+			font-size: 18px;
 			margin-bottom: 24px;
 		}
 		@include lg {
+			font-size: 20px;
 			margin-bottom: 30px;
 		}
 		i, em {

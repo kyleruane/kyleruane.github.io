@@ -25,10 +25,12 @@
 		top: 20px;
 		left: 20px;
 		background-image: url(../images/logo_super_thin.svg);
+		//background-image: url(../images/logo_thin.svg);
 		background-size: 20px auto;
 		background-position: center center;
 		background-repeat: no-repeat;
-		opacity: .7;
+		//opacity: .7;
+		opacity: 1;
 		@include sm {
 			top: 14px;
 			left: 30px;
@@ -56,8 +58,8 @@
 			}
 			> li {
 				@include heading;
-				font-size: 10px;
-				letter-spacing: 1.75px;
+				font-size: 11px;
+				letter-spacing: 1.25px;
 				float: left;
 				&.active {
 					position: relative;
