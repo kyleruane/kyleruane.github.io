@@ -11,7 +11,7 @@ backdrop: tanmaya/tg_hero.jpg
 thumb:
 
 date: 2000-01-23
-category: UI
+category: study
 size: half
 ---
 

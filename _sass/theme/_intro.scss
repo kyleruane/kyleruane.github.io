@@ -80,7 +80,7 @@
 			width: 50%;
 		}
 		@include lg {
-			padding-left: 20px;
+			//padding-left: 20px;
 			font-size: 16px;
 		}
 	}
@@ -153,15 +153,15 @@
 			margin-bottom: 24px;
 		}
 		@include lg {
-			font-size: 20px;
+			font-size: 19px;
 			margin-bottom: 30px;
 		}
 		i, em {
 			font-weight: 300;
 			font-size: 13px;
-			color: lighten($text-light, 20%);
+			color: lighten($text-light, 10%);
 			font-family: $font-copy;
-			letter-spacing: .35px;
+			letter-spacing: .15px;
 			text-transform: none;
 			letter-spacing: normal;
 			@include sm {
@@ -169,8 +169,27 @@
 				margin-left: 3px;
 			}
 		}
+		em {
+			color: $text-light;
+			font-size: 13px;
+			font-style: normal;
+			@include sm {
+				font-size: 18px;
+				margin-left: 0;
+			}
+		}
 		a {
+			font-weight: 600;
 			border-bottom: 1px solid #e8e8e8;
+			@include sm {
+				font-size: 15px;
+			}
+			@include md {
+				font-size: 16px;
+			}
+			@include lg {
+				font-size: 16px;
+			}
 		}
 	}
 	cite {

@@ -41,10 +41,22 @@ size: normal
 
 ![Burlington Coat Factory Design]({{site.project_img_path}}burlington/bcf_pages.jpg)
 
-![Kraco Checkout Progress Visualization]({{site.project_img_path}}kraco/kr_bar.jpg)
-
 ![Breaker Boy Store Design]({{site.project_img_path}}breakerboy/bb_pages.jpg)
 
 ![Italian Cookie Store Design]({{site.project_img_path}}ics/ics_pages.jpg)
 
+![Image Cotton Bureau Shop Page]({{site.project_img_path}}cotton-bureau/cb_shop.jpg)
+![Image Cotton Bureau Checkout]({{site.project_img_path}}cotton-bureau/cb_site_checkout.jpg)
 
+![Image Cotton Bureau PDP]({{site.project_img_path}}cotton-bureau/cb_pdp_wide.jpg)
+![Image Cotton Bureau PDP Mobile View]({{site.project_img_path}}cotton-bureau/cb_pdp_mobile.jpg)
+![Image Cotton Bureau PDP Purchase Forms]({{site.project_img_path}}cotton-bureau/cb_pdp_buy.jpg)
+![Image Cotton Bureau PDP Non-Apparel Items]({{site.project_img_path}}cotton-bureau/cb_pdp_non-apparel.jpg)
+![Image Cotton Bureau PDP Fixed Headers]({{site.project_img_path}}cotton-bureau/cb_pdp_headers.jpg)
+<br><br>
+<h5><span>Alternate Concepts</span></h5>
+<br>
+![Image Cotton Bureau PDP Alternate Concept]({{site.project_img_path}}cotton-bureau/cb_pdp_alt_fat_buttons.jpg)
+![Image Cotton Bureau PDP Alternate Concept]({{site.project_img_path}}cotton-bureau/cb_pdp_alt_steps.jpg)
+![Image Cotton Bureau PDP Alternate Concept]({{site.project_img_path}}cotton-bureau/cb_pdp_alt_drawer.jpg)
+![Image Cotton Bureau PDP Alternate Concept]({{site.project_img_path}}cotton-bureau/cb_pdp_alt_stack.jpg)

@@ -9,7 +9,7 @@ description: |
 feature: logos/mark_feature.jpg
 
 date: 2000-01-06
-category: collection
+category: study
 size: normal
 ---
 

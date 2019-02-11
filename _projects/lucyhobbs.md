@@ -11,7 +11,7 @@ backdrop: lucyhobbs/lh_trio.jpg
 thumb:
 
 date: 2000-01-25
-category: UI
+category: study
 size: half
 ---
 

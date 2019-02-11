@@ -8,7 +8,7 @@ description: |
 feature: illustrations/max.jpg
 
 date: 2000-01-08
-category: collection
+category: study
 size: normal
 ---
 
@@ -37,5 +37,3 @@ size: normal
 ![]({{site.project_img_path}}illustrations/prop_slides.jpg)
 
 <!--![Hooplinked badges]({{site.project_img_path}}hooplinked/trophies.jpg)-->
-
-

@@ -7,10 +7,10 @@ description: |
  <time>c. 2015</time>
 
 feature: prosys/ps_hero.jpg
-backdrop: prosys/ps_hero.jpg
+backdrop: prosys/ps_brushes.jpg
 thumb:
 
-date: 2000-01-20
+date: 2000-01-24
 category: UI
 size: half
 ---

@@ -30,3 +30,5 @@ size: normal
 ![Crust Commercial Template]({{site.project_img_path}}crust/commercial.jpg)
 
 ![Crust Commercial Feature]({{site.project_img_path}}crust/feature.jpg)
+
+![Image Cotton Bureau Plus Stores]({{site.project_img_path}}cotton-bureau/cb_plus_stores.jpg)

@@ -1,11 +1,19 @@
 .outro {
-	padding: 100px 20px 50px;
+	padding: 60px 20px 50px;
 	@include clearfix();
 	@include sm {
-		padding: 160px 48px 100px;
+		padding: 160px 30px 100px;
 	}
 	@include md {
-		padding: 200px 68px;
+		padding: 200px 40px;
+	}
+	@include lg {
+		padding-left: 52px;
+		padding-right: 52px;
+	}
+	@include xl {
+		padding-left: 68px;
+		padding-right: 68px;
 	}
 	.text {
 		font-size: 13px;
@@ -56,14 +64,14 @@
 			margin-top: 0;
 			display: inline-block;
 			padding: 0;
-			font-size: 22px;
+			font-size: 30px;
 			background: white;
 			position: relative;
 			margin-bottom: 24px;
 			line-height: .8;
 			letter-spacing: .01em;
 			@include sm {
-				padding: 0 20px;
+				padding: 0 20px 0 0;
 				font-size: 40px;
 			}
 			@include md {
@@ -75,13 +83,15 @@
 		}
 	}
 	h4 {
-		font-size: 10px;
-		font-weight: 400;
+		font-size: 12px;
+		font-weight: 600;
 		margin: 0 0 32px;
 		font-family: $font-nav;
+		text-transform: none;
+		letter-spacing: normal;
 		margin-top: 30px;
 		@include sm {
-			font-size: 13px;
+			font-size: 15px;
 			margin-top: 36px;
 		}
 		a {

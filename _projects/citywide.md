@@ -7,10 +7,10 @@ description: |
  <time>c. 2015</time>
 
 feature: citywide/cw_hero.jpg
-backdrop: citywide/cw_bg.jpg
+backdrop: citywide/cw_bg_dark.jpg
 thumb: citywide/cw_thumb.png
 
-date: 2000-01-22
+date: 2000-01-23
 category: UI
 size: normal
 ---
