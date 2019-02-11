@@ -239,11 +239,14 @@
 			position: absolute;
 			top: 50%;
 			margin-top: 0px;
-			right: 10px;
+			right: 0;
+			@include sm {
+				right: 10px;
+			}
 		}
 		span {
 			background: white;
-			padding-right: 14px;
+			padding-right: 10px;
 			position: relative;
 			@include sm {
 				padding-right: 0;
