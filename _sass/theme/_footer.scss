@@ -22,11 +22,10 @@
 	.copyright {
 		font-size: 11px;
 		color: lighten($text-color, 10%);
-		text-align: center;
+		text-align: right;
 		flex-grow: 1;
 		@include sm {
 			font-size: 12px;
-			text-align: right;
 		}
 	}
 }
