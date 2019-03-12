@@ -3,12 +3,11 @@ layout: default
 ---
 
 <section class="intro">
-    <div class="line"></div>
+  <div class="site-wrapper">
     <div class="text">
-        <h5>Kyle Ruane <!--<i>(/’roo-eyn/)</i>--><em>is</em></h5>
-        <h2>Serving Up Some Damn Fine Design</h2>
+        <h2>Kyle Ruane <!--<i>(/’roo-eyn/)</i>--></h2>
         <div>
-            <p>Ahoy hoy. I’m a multidisciplinary designer from Pittsburgh (by way of the Poconos) specializing in interfaces and branding. I've also been known to dabble in front-end development and illustration. Most recently, I handled product design at <a href="https://cottonbureau.com">Cotton Bureau</a>.</p>
+            <p>I’m a multidisciplinary designer from Pittsburgh (by way of the Poconos) specializing in creating interfaces and branding. I also occasionally draw things and have been known to dig into front-end development. Most recently, I handled product design at Cotton Bureau. In the past I co-founded a funded startup, ran an agency specializing in custom WordPress sites, was founding member of a coworking space, was design lead at a mid-sized eCommerce agency, and designed for various clients in a contract/freelance capacity.</p>
         </div>
         <div class="social">
             <ul>
@@ -16,13 +15,14 @@ layout: default
                 <li><a href="https://dribbble.com/kyleruane"><i class="fa fa-dribbble"></i></a></li>
                 <li><a href="https://www.instagram.com/kyleruane/"><i class="fa fa-instagram"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/kyleruane/"><i class="fa fa-linkedin"></i></a></li>
-                <!--<li><a href="https://open.spotify.com/user/kruane142"><i class="fa fa-spotify"></i></a></li>-->
             </ul>
         </div>
     </div>
+  </div>
 </section>
 
 <section class="work">
+  <div class="site-wrapper">
     <div class="grid">
 
         {% assign projects = site.projects | sort: 'date' %}
@@ -31,47 +31,21 @@ layout: default
         {% unless projects.category == "study"%}
 
         <a href="{{ site.baseurl }}{{ projects.url }}" class="item {{ projects.size }}">
-            <figure class="background">
-                <div class="feature"></div>
+            <figure class="background" style="background-image:url({{site.project_img_path}}{{ projects.backdrop }});">
+                {% if projects.thumb %}<div class="feature" style="background-image:url({{site.project_img_path}}{{ projects.thumb }});"></div>{% endif %}
                 <div class="overlay">
                     <h5>
                       <span>{{ projects.title }}</span>
                       <div class="pointer"></div>
                     </h5>
                 </div>
-                <div class="image-placeholder bg"><img src="{{site.project_img_path}}{{ projects.backdrop }}"></div>
-                <div class="image-placeholder thumb"><img src="{{site.project_img_path}}{{ projects.thumb }}"></div>
             </figure>
         </a>
+
         {% endunless %}
         {% endunless %}
         {% endfor %}
 
     </div>
-</section>
-
-<section class="collections">
-    <h4>Collections</h4>
-    <ul>
-        {% for projects in site.projects %}
-        {% if projects.category == "collection"%}
-
-        <li><a href="{{ site.baseurl }}{{ projects.url }}">{{ projects.title }}</a></li>
-
-        {% endif %}
-        {% endfor %}
-    </ul>
-</section>
-
-<section class="outro">
-    <div class="headline">
-        <h2>Hire Me</h2>
-    </div>
-    <div class="text">
-        <div>
-            <p>I am available for contract production or consulting work—as an extension of your product team, backup on agency projects, or your one-man design department. I can help plan your application or website, define its users, map out interactions, or give it the visual detail needed to set it apart, delivering any number of a variety of assets—from wireframes and user flow charts, to prototypes, to artwork source files, to code.</p>
-
-            <h4><a href="{{ site.baseurl }}/hire">Read more about my capabilities</a></h4>
-        </div>
-    </div>
+  </div>
 </section>

@@ -4,33 +4,70 @@ title: Wildfire & ClassCraft
 description: |
  <p>Branding and website for a firm offering enterprise-level audio/visual solutions, such as control room planning and execution, custom conference rooms, and home theaters. Originally named ClassCraft for its owner, the company was re-branded for franchising opportunities.</p>
  <p>Deliverables included logo system, branding guidelines, business cards, document templates, and a custom website.</p>
- <time>c. 2015, 2016</time>
- <ul>
- 	<li><a href="https://dribbble.com/kyleruane/projects/314638-ClassCraft">View project on Dribbble</a></li>
- </ul>
 
-feature: classcraft/wf_mark.jpg
+feature:
 backdrop: classcraft/wf_bg.jpg
 thumb: classcraft/wf_thumb.png
 
-date: 2000-01-19
+stardate: c. 2015, 2016
+date: 2000-01-20
 category: UI
 size: half
 ---
 
-![Wildfire Brand]({{site.project_img_path}}classcraft/wf_brand_board.jpg)
-![Wildfire Website]({{site.project_img_path}}classcraft/wf_homepage.jpg)
-![Wildfire Collateral]({{site.project_img_path}}classcraft/wf_bc.jpg)
 
-![ClassCraft Logo Mark]({{site.project_img_path}}classcraft/cc_hero.jpg)
-![ClassCraft Branding Mockups]({{site.project_img_path}}classcraft/cc_feature.jpg)
+<section class="tight">
+  <main>
+    <figure style="background-image:url({{site.project_img_path}}classcraft/wf_brand_board.jpg);" class="">
+      <img src="{{site.project_img_path}}classcraft/wf_brand_board.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}classcraft/wf_homepage.jpg);" class="">
+      <img src="{{site.project_img_path}}classcraft/wf_homepage.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}classcraft/wf_bc.jpg);" class="">
+      <img src="{{site.project_img_path}}classcraft/wf_bc.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}classcraft/cc_hero.jpg);" class="">
+      <img src="{{site.project_img_path}}classcraft/cc_hero.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}classcraft/cc_feature.jpg);" class="">
+      <img src="{{site.project_img_path}}classcraft/cc_feature.jpg">
+    </figure>
 
-<p class="half"><img src="{{site.project_img_path}}classcraft/cc_logo.jpg"></p>
-<p class="half"><img src="{{site.project_img_path}}classcraft/cc_colors.jpg"></p>
+    <div class="arrangement duo">
+      <figure style="background-image:url({{site.project_img_path}}classcraft/cc_logo.jpg);" class="">
+        <img src="{{site.project_img_path}}classcraft/cc_logo.jpg">
+      </figure>
+      <figure style="background-image:url({{site.project_img_path}}classcraft/cc_colors.jpg);" class="">
+        <img src="{{site.project_img_path}}classcraft/cc_colors.jpg">
+      </figure>
+    </div>
 
-<p class="half"><img src="{{site.project_img_path}}classcraft/cc_book.jpg"></p>
-<p class="half"><img src="{{site.project_img_path}}classcraft/cc_items.jpg"></p>
+    <div class="arrangement duo">
+      <figure style="background-image:url({{site.project_img_path}}classcraft/cc_book.jpg);" class="">
+        <img src="{{site.project_img_path}}classcraft/cc_book.jpg">
+      </figure>
+      <figure style="background-image:url({{site.project_img_path}}classcraft/cc_items.jpg);" class="">
+        <img src="{{site.project_img_path}}classcraft/cc_items.jpg">
+      </figure>
+    </div>
 
-![ClassCraft Homepage]({{site.project_img_path}}classcraft/cc_homepage.jpg)
+    <figure style="background-image:url({{site.project_img_path}}classcraft/cc_homepage.jpg);" class="">
+      <img src="{{site.project_img_path}}classcraft/cc_homepage.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}classcraft/cc_site.jpg);" class="">
+      <img src="{{site.project_img_path}}classcraft/cc_site.jpg">
+    </figure>
 
-![ClassCraft Homepage]({{site.project_img_path}}classcraft/cc_site.jpg)
+  </main>
+</section>
+<section>
+  <main>
+    <br><br>
+    <article class="centered">
+      <div class="text-wrapper">
+        <p class="links"><a href="https://dribbble.com/kyleruane/projects/314638-ClassCraft">View Project on Dribbble</a></p>
+      </div>
+    </article>
+  </main>
+</section>

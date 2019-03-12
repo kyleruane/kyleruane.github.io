@@ -1,74 +1,17 @@
 .intro {
-	padding: 80px 20px 80px;
+	padding: 80px 0 80px;
 	min-height: 400px;
 	@include clearfix();
 	position: relative;
 	overflow: hidden;
 	@include sm {
-		padding: 40px 30px 80px;
-		//min-height: 100vh;
-		//background-image: url(../images/trees_light.jpg);
-		@include background;
+		padding: 80px 0 80px;
 	}
 	@include md {
-		padding: 50px 40px 100px;
+		padding: 100px 0 100px;
 	}
-	@include lg {
-		padding: 50px 52px 100px;
-	}
-	@include xl {
-		padding: 50px 68px 100px;
-	}
-	@include xxl {
-		min-height: calc(100vh - 40px);
-	}
-	.line {
-		// diagonal
-		/*
-		@include md {
-			height: 200%;
-			width: 1px;
-			background: transparentize($text-light, .88);
-			position: absolute;
-			top: -30%;
-			left: 0%;
-			@include rotate(-135deg);
-		}
-		*/
-		@include sm {
-			height: 500px;
-			width: 1px;
-			background: transparentize(black, .35);
-			position: absolute;
-			top: 0;
-			right: 92px;
-			opacity: .14;
-			&:before {
-				content: " ";
-				display: block;
-				width: 18px;
-				height: 1px;
-				background: black;
-				position: absolute;
-				bottom: 4px;
-				right: -3px;
-				@include rotate(45deg);
-			}
-			&:after {
-				content: " ";
-				display: block;
-				width: 18px;
-				height: 1px;
-				background: black;
-				position: absolute;
-				bottom: 4px;
-				right: -14px;
-				@include rotate(-45deg);
-			}
-		}
-		@include md {
-			right: 104px;
-		}
+	@include md {
+		padding: 100px 0 140px;
 	}
 	.text {
 		font-size: 14px;
@@ -85,26 +28,19 @@
 		}
 	}
 	h2 {
-		font-size: 64px;
-		margin: 0 0 14px;
-		font-weight: 400;
-		letter-spacing: normal;
-		line-height: .85;
+		font-size: 24px;
+		margin: 0 0 22px;
 		@include sm {
-			font-size: 100px;
-			line-height: .825;
-			margin-bottom: 14px;
-		}
-		@include md {
-			font-size: 110px;
-			line-height: .825;
+			font-size: 28px;
 			margin-bottom: 20px;
 		}
+		@include md {
+			font-size: 36px;
+			margin-bottom: 26px;
+		}
 		@include lg {
-			font-size: 120px;
-			line-height: .825;
-			letter-spacing: -.015em;
-			margin-bottom: 24px;
+			font-size: 40px;
+			margin-bottom: 30px;
 		}
 	}
 	h3 {
@@ -211,18 +147,16 @@
 		}
 	}
 	p {
-		text-shadow: 0 0 10px transparentize(white, .50);
+		font-size: 13px;
 		@include sm {
-			line-height: 1.8;
+			line-height: 1.7;
 			font-size: 14px;
 		}
 		@include md {
-			line-height: 1.8;
 			font-size: 15px;
 		}
 		@include lg {
-			line-height: 1.9;
-			font-size: 16px;
+			font-size: 15px;
 		}
 		a {
 			color: #222;
@@ -242,6 +176,16 @@
 		}
 	}
 	.social {
+		margin-top: 20px;
+		@include sm {
+			margin-top: 24px;
+		}
+		@include md {
+			margin-top: 26px;
+		}
+		@include lg {
+			margin-top: 30px;
+		}
 		ul {
 			list-style: none;
 			padding: 0;

@@ -48,7 +48,7 @@ body {
 }
 body {
     font-family: $font-copy;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
     color: $text-color;
     @include sm {
@@ -71,12 +71,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-title;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: normal;
-    color: $text-color;
+    color: #222;
     line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    //text-transform: uppercase;
+    //letter-spacing: 1px;
     //letter-spacing: -.5px;
     @include sm {
       //letter-spacing: 1.75px;

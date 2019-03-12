@@ -2,29 +2,50 @@
 	padding: 0;
 	overflow: hidden;
 	position: relative;
-	&:after {
+	/*
+	&:before {
 		content: "Select Projects";
-		display: none;
-		height: 20px;
-		position: absolute;
-		top: 96px;
-		@include rotate(90deg);
-		right: -21px;
+		display: block;
 		font-family: $font-nav;
-		text-transform: uppercase;
-		color: white;
-		font-size: 11px;
-		letter-spacing: 1.5px;
-		word-spacing: 4px;
-		font-weight: 600;
-		opacity: .8;
+		font-size: 13px;
+		margin-bottom: 30px;
+		font-weight: 500;
 		@include sm {
-			display: block;
+			font-size: 14px;
 		}
-		@include lg {
-			right: -9px;
+		@include md {
+			font-size: 15px;
 		}
 	}
+	*/
+	/*
+	&:after {
+		content: "Select Projects";
+		//display: none;
+		//height: 20px;
+		//position: absolute;
+		//top: 96px;
+		//@include rotate(90deg);
+		//right: -21px;
+		font-family: $font-nav;
+		//text-transform: uppercase;
+		//color: white;
+		//font-size: 11px;
+		//letter-spacing: 1.5px;
+		//word-spacing: 4px;
+		//font-weight: 600;
+		//opacity: .8;
+		font-size: 13px;
+		margin-bottom: 30px;
+		@include sm {
+			//display: block;
+			font-size: 14px;
+		}
+		@include lg {
+			//right: -9px;
+		}
+	}
+	*/
 	@include sm {
 		padding: 0;
 	}
@@ -61,50 +82,64 @@
 			}
 		}
 	}
-	.row {
-		//margin-left: -10px;
-		//margin-right: -10px;
-		margin: 0
-	}
 	.container {
 		padding: 0;
 	}
 	.grid {
-		//padding: 0 10px;
 		width: 100%;
-		padding: 0 20px;
+		display: flex;
+		flex-direction: column;
 		@include sm {
+			flex-direction: row;
+			flex-wrap: wrap;
 			padding: 0;
+			width: calc(100% + 20px);
+			margin-left: -10px;
 		}
-	}
-	.grid-sizer {
-		width: 100%;
-		@include sm {
-			width: 50%;
+		@include lg {
+			width: calc(100% + 30px);
+			margin-left: -15px;
 		}
-		@include md {
-			width: 33.333333%;
+		position: relative;
+		&:before {
+			content: "Select Projects";
+			display: block;
+			font-family: $font-nav;
+			font-size: 13px;
+			margin-bottom: 30px;
+			font-weight: 500;
+			color: #222;
+			@include sm {
+				font-size: 14px;
+				margin-left: 10px;
+			}
+			@include md {
+				font-size: 15px;
+				margin-left: 15px;
+			}
 		}
 	}
 	.item {
-		width: 100%;
-		//padding: 0 10px;
-		//margin-bottom: 20px;
+		flex-basis: 100%;
+		flex-grow: 0;
+		flex-shrink: 0;
 		display: block;
 		margin-bottom: 16px;
+		border-radius: 3px;
+		overflow: hidden;
 		@include sm {
-			//width: 33.333333%;
-			//float: left;
-			//display: inline-block;
-			margin-bottom: 0;
+			flex-basis: calc(100% - 20px);
+			margin: 0 10px 20px;
+			border-radius: 4px;
 		}
-		@include md {
-			//width: 25%;
+		@include lg {
+			flex-basis: calc(100% - 30px);
+			margin: 0 15px 30px;
+			border-radius: 6px;
 		}
 		&.half {
 			@include sm {
-				width: 50%;
-				float: left;
+				flex-basis: calc(50% - 20px);
 				figure {
 					padding-bottom: 100%;
 				}
@@ -117,29 +152,8 @@
 					@include background;
 				}
 			}
-			@include md {
-				//width: 33.333333%;
-			}
-		}
-		&.wide {
-			@include md {
-				width: 50%;
-				figure {
-					padding-bottom: calc(50% - 10px);
-				}
-			}
-		}
-		&.tall {
-			figure {
-				padding-bottom: calc(200% + 20px);
-			}
-		}
-		&.big {
-			@include md {
-				width: 50%;
-				figure {
-					padding-bottom: 100%;
-				}
+			@include lg {
+				flex-basis: calc(50% - 30px);
 			}
 		}
 		figure {
@@ -158,7 +172,6 @@
 			width: 100%;
 			height: 100%;
 			background: transparentize(#000, .2);
-			//border: 1px solid #e2e2e2;
 			padding: 30px;
 			opacity: 0;
 			@include transition(all .6s);
@@ -168,23 +181,19 @@
 				left: 0;
 				padding: 30px 30px 32px;
 				font-family: $font-title;
-				letter-spacing: .35px;
 				font-size: 18px;
-				font-weight: 400;
+				font-weight: 500;
 				line-height: 1;
-				//max-width: 300px;
-				//text-align: right;
 				margin: 0;
 				width: 100%;
 				color: white;
-				//border-top: 1px solid transparentize(white, .84);
 				display: flex;
 				flex-direction: row;
 				@include sm {
-					font-size: 24px;
+					font-size: 18px;
 				}
 				@include md {
-					font-size: 36px;
+					font-size: 20px;
 				}
 				@include lg {
 					padding: 40px 40px 42px;
@@ -211,14 +220,14 @@
 					&:after {
 						content: "";
 						display: block;
-						width: 13px;
-						height: 13px;
+						width: 11px;
+						height: 11px;
 						border: solid white;
-						border-width: 1px 1px 0 0 ;
+						border-width: 1px 1px 0 0;
 						@include rotate(45deg);
 						position: absolute;
 						top: 50%;
-						margin-top: -7px;
+						margin-top: -6px;
     				right: 1px;
 					}
 				}

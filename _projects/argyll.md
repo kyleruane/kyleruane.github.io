@@ -10,7 +10,7 @@ backdrop: argyll/hero.jpg
 thumb:
 
 date: 2000-01-30
-category: UI
+category: study
 size: half
 ---
 

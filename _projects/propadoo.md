@@ -2,25 +2,36 @@
 layout: project
 title: Propadoo
 description: |
- <p>Web app and supporting marketing website for an online testimonial service that lets companies and individuals give and receive ‘props’ for outstanding service as well as refer friends and colleagues.</p>
- <p>Deliverables included app interface design and marketing website design.</p>
- <time>c. 2012</time>
+ <p>Web app and supporting marketing website for an online testimonial service that lets companies and individuals give and receive ‘props’ for outstanding service as well as refer friends and colleagues. Deliverables included app interface design and marketing website design.</p>
 
 feature: propadoo/hero.jpg
 backdrop: propadoo/hero.jpg
 thumb:
 
-date: 2000-01-22
+stardate: c. 2012
+date: 2000-01-21
 category: UI
 size: half
 ---
 
-![Propadoo Homepage]({{site.project_img_path}}propadoo/homepage.jpg)
+<section class="tight">
+  <main>
 
-![Propadoo App]({{site.project_img_path}}propadoo/app_screens.jpg)
+    <figure style="background-image:url({{site.project_img_path}}propadoo/homepage.jpg);" class="">
+      <img src="{{site.project_img_path}}propadoo/homepage.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}propadoo/app_screens.jpg);" class="">
+      <img src="{{site.project_img_path}}propadoo/app_screens.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}propadoo/dash_2_crop.jpg);" class="">
+      <img src="{{site.project_img_path}}propadoo/dash_2_crop.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}propadoo/dash_3_crop.jpg);" class="">
+      <img src="{{site.project_img_path}}propadoo/dash_3_crop.jpg">
+    </figure>
+    <figure style="background-image:url({{site.project_img_path}}propadoo/prop.jpg);" class="">
+      <img src="{{site.project_img_path}}propadoo/prop.jpg">
+    </figure>
 
-![Propadoo App]({{site.project_img_path}}propadoo/dash_2_crop.jpg)
-
-![Propadoo App]({{site.project_img_path}}propadoo/dash_3_crop.jpg)
-
-![Propadoo Prop Interface]({{site.project_img_path}}propadoo/prop.jpg)
+  </main>
+</section>

@@ -1,26 +1,21 @@
 {% include head.html %}
-{% include header_bar.html %}
-
-    <div class="placeholder project"></div>
+{% include header_project.html %}
 
 	<main class="single project">
-		<div class="container">
 
 			<section class="project-intro">
-				<div class="floater" data-spy="affix" data-offset-top="90" data-offset-bottom="100">
+				<header>
 					<h2>{{ page.title }}</h2>
-		  			<div>
-			  			{{ page.description }}
-			  		</div>
-			  	</div>
+					<time>{{ page.stardate }}</time>
+				</header>
+				<article>
+		  		{{ page.description }}
+			  </article>
 			</section>
 
 			<section class="project-content">
-				<div class="feature">
-			  		<img src="{{site.project_img_path}}{{ page.feature }}">
-			  	</div>
-			  	<div class="images">
-				    {{ content }}
+			  <div class="images">
+				   {{ content }}
 				</div>
 			</section>
 

@@ -11,7 +11,7 @@ backdrop: hooplinked/mockup.jpg
 thumb:
 
 date: 2000-01-29
-category: UI
+category: study
 size: half
 ---
 
