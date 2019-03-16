@@ -65,7 +65,7 @@ size: half
           <h3>Version 1.0</h3>
         </div>
         <div class="text-block">
-          <p>The initial release was well-received but never had the attention and maintenance needed to keep scale its base enough to keep it relevant. The roadmap was originally more ambitions, with nagging features encouraging users to act on their marks, statistics, media previews that allowed users to consume certain content without leaving the app, contextual suggestions based on the time of day, and a timeline view of marks letting the user browse marks based on date added. Supporting Chrome extension and bookmarklet were also created along with a simple marketing site.</p>
+          <p>The initial release was well-received but never had the attention and maintenance needed to scale its base enough to stay relevant. The roadmap was originally more ambitions, with nagging features encouraging users to act on their marks, statistics, media previews that allowed users to consume certain content without leaving the app, contextual suggestions based on the time of day, and a timeline view of marks letting the user browse marks based on date added. Supporting Chrome extension and bookmarklet were also created along with a simple marketing site.</p>
         </div>
       </div>
     </article>
