@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: project
 title: Ticketech
 description: |
@@ -10,7 +10,7 @@ thumb: ticketech/tt_thumb.png
 
 stardate: c. 2016
 date: 2000-01-12
-category: UI
+category: study
 size: half
 ---
 
@@ -51,6 +51,7 @@ size: half
 
   </main>
 </section>
+-->
 
 <!--
 ![]({{site.project_img_path}}ticketech/dash1.jpg)

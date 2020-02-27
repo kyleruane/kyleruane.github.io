@@ -10,7 +10,7 @@ thumb:
 
 stardate: c. 2012
 date: 2000-01-21
-category: UI
+category: study
 size: half
 ---
 
